@@ -53,6 +53,8 @@ const Header = ({ dark, setMode }) => {
         navigate('/addcsb')
         else if (e === '/addcsbc')
         navigate('/addcsbc')
+        else if (e === '/')
+        navigate('/')
     }
 
 
@@ -65,14 +67,18 @@ const Header = ({ dark, setMode }) => {
                     <div className='container'>
                         {/*<ul className='navMenu'>*/}
                         <ul className={Mobile ? "navMenu-list" : "link"} onClick={() => setMobile(false)}>
-                            <li onClick={(e) => { changeHandle('/addbrance') }}>
+                            <li onClick={(e) => { changeHandle('/') }}>
 
                                 <DashboardOutlinedIcon className='navIcon active' />
 
 
                                 <a className='navIcon' >
-                                    Add Branch
+                                    Home
                                 </a>
+                            </li>
+                            <li onClick={(e) => { changeHandle('/addbrance') }}>
+                                <InvertColorsOutlinedIcon className='navIcon' />
+                                <a >Add Brance</a>
                             </li>
                             <li onClick={(e) => { changeHandle('/addschool') }}>
                                 <InvertColorsOutlinedIcon className='navIcon' />
