@@ -18,7 +18,7 @@ import AddSection from './Management/Add/AddSection/AddSection';
 import AddCSB from './Management/Add/AddCSB/AddCSB';
 import AddCSBC from './Management/Add/AddCSBC/AddCSBC';
 import Campus from './Management/components/Pages/Campus/Campus';
-
+import Dashboard from './Teacher/Dashboard';
 
 function App() {
 
@@ -59,6 +59,7 @@ function App() {
           <Route path='/addsection' element={<AddSection />} ></Route>
           <Route path="/addcsb" element={<AddCSB />} ></Route>
           <Route path='/addcsbc' element={<AddCSBC />} ></Route>
+          <Route path='/Dashboard' element={<Dashboard />} ></Route>
 
 
         </Routes>

@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* .test-form-container {
+    background-color: #232323;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height:75vh
+  }
+  
+  .test-form-container h2 {
+    margin-top: 0;
+  }
+  
+  .test-form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .test-form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .test-form-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .test-form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .test-type-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  
+  .test-type-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .option.selected {
+    background-color: #007bff;
+  }
+  button{
+    width:20%;
+  } */
+
+
+  .test-form-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .test-form-container h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .test-type-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .test-type-box h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .option.selected {
+    background-color: #337ab7;
+    color: #fff;
+  }
+  
+  .option.selected:hover {
+    background-color: #286090;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #337ab7;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .floating-button:hover {
+    background-color: #286090;
+  }
+  
+  .floating-button:focus {
+    outline: none;
+  }
+  
+  .floating-button-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
