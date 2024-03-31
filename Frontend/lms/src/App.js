@@ -19,6 +19,9 @@ import AddCSB from './Management/Add/AddCSB/AddCSB';
 import AddCSBC from './Management/Add/AddCSBC/AddCSBC';
 import Campus from './Management/components/Pages/Campus/Campus';
 import Dashboard from './Teacher/Dashboard';
+import State from './State/State'
+import Form from './State/Form'
+import Navbar from './State/Navbar'
 
 function App() {
 
@@ -60,6 +63,9 @@ function App() {
           <Route path="/addcsb" element={<AddCSB />} ></Route>
           <Route path='/addcsbc' element={<AddCSBC />} ></Route>
           <Route path='/Dashboard' element={<Dashboard />} ></Route>
+          <Route path='/state' element={<State/>}/>
+      <Route path='/Form' element={<Form/>}/>
+      <Route path='/Navbar' element={<Navbar/>}/>
 
 
         </Routes>
