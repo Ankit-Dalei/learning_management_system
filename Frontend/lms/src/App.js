@@ -27,6 +27,10 @@ import Signup from './Login/Signup';
 import Head from './Management/components/head/Head';
 import StudentDash from './Student/StudentDash';
 import HeadNavStudent from './Student/HeadNavStudent';
+import Hod from './Hod';
+import HodStudent from './HodStudent/HodStudent';
+import HodTeacher from './HodTeacher/HodTeacher';
+import HodProfileTemplate from './HodProfile/HodProfileTemplate';
 
 function App() {
 
@@ -75,7 +79,11 @@ function App() {
           {/* <Route path='/state' element={<State/>}/>
       <Route path='/Form' element={<Form/>}/>
       <Route path='/Navbar' element={<Navbar/>}/> */}
-
+      <Route path='/' element={<Hod/>}/>
+        <Route path='/HodTeacher' element={<HodTeacher/>}/>
+        <Route path='/Hodstudent' element={<HodStudent/>}/>
+        
+        <Route path='/HodProfile' element={<HodProfileTemplate/>}/>
 
         </Routes>
       </BrowserRouter>
