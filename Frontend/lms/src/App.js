@@ -25,6 +25,8 @@ import Navbar from './State/Navbar'
 import Login from './Login/Login';
 import Signup from './Login/Signup';
 import Head from './Management/components/head/Head';
+import StudentDash from './Student/StudentDash';
+import HeadNavStudent from './Student/HeadNavStudent';
 
 function App() {
 
@@ -47,7 +49,9 @@ function App() {
           <Route path="/brancee" element={<Brancee />}></Route>
           {/* <Route path="/" element={<House />}></Route> */}
           {/* <Route path="/" element={<Login />}></Route> */}
-          <Route path="/" element={<Signup />}></Route>
+          {/* <Route path="/" element={<Signup />}></Route> */}
+          <Route path="/" element={<HeadNavStudent />}></Route>
+          {/* <Route path="/" element={<StudentDash />}></Route> */}
           <Route path="/course" element={<Course />}></Route>
           <Route path="/addschool" element={<AddSchool />}></Route>
 
