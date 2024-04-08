@@ -10,9 +10,9 @@ const HodTeacher = () => {
     <div>
       <Hodlayout>
         <Hodnavbar/>
-        {/* <HodTeacherbody/> */}
+        <HodTeacherbody/>
         {/* <HodTeacherMap/> */}
-        <HodTeacherDetails/>
+        {/* <HodTeacherDetails/> */}
       </Hodlayout>
     </div>
   )

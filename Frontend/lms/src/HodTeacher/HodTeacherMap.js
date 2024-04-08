@@ -2,20 +2,22 @@ import React from 'react';
 
 const HodTeacherMap = (props) => {
   return (
-    <div className='card  text-light bg-dark border border-primary border-2'>
-      <div className='row g-0'>
-        <div className='col-md-5'>
-          <img
-            src={props.img}
-            alt='Trendy Pants and Shoes'
-            className='img-fluid rounded-start'
-          />
-        </div>
-        <div className='col-md-7'>
-          <div className='card-body'>
-            <h5 className='card-title'>{props.name}</h5>
-            <p className='card-text'>{props.descp}</p>
-          </div>
+    
+    <div className=' row border rounded-4 border-light m-2 text-light' style={{height:'20rem',width:'32rem'}}>
+      
+        <img src={props.img} alt="" className='col-5 img-fluid img-thumbnail rounded-4' />
+     
+      <div className='col-7 mx-2 text-light d-flex justify-content-center  container-fluid row p-4 d-flex flex-column'>
+        <h4 className='text-center '>{props.name}</h4>
+        <div>CONTACT DETAILS</div>
+        <hr />
+        <div className='col text-break'>EMAIL : {props.email}</div>
+        <div className='col text-break'>Contact : {props.phone}</div>
+        <div className='col text-break'>Address : {props.address}</div>
+        <div className='row d-flex flex-row container-fluid mx-3' style={{width:'100%'}}>
+          <div className='col-5'><button className=' btn btn-sm btn-outline-warning '>view</button></div>
+          <div className='col-5'><button className=' btn btn-sm btn-outline-danger'>delete</button></div>
+          
         </div>
       </div>
     </div>
