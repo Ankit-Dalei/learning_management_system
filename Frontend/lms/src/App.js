@@ -52,9 +52,9 @@ function App() {
 
           <Route path="/brancee" element={<Brancee />}></Route>
           {/* <Route path="/" element={<House />}></Route> */}
-          {/* <Route path="/" element={<Login />}></Route> */}
+          <Route path="/" element={<Login />}></Route>
           {/* <Route path="/" element={<Signup />}></Route> */}
-          <Route path="/" element={<HeadNavStudent />}></Route>
+          {/* <Route path="/" element={<HeadNavStudent />}></Route> */}
           {/* <Route path="/" element={<StudentDash />}></Route> */}
           <Route path="/course" element={<Course />}></Route>
           <Route path="/addschool" element={<AddSchool />}></Route>
@@ -76,10 +76,10 @@ function App() {
           <Route path="/addcsb" element={<AddCSB />} ></Route>
           <Route path='/addcsbc' element={<AddCSBC />} ></Route>
           <Route path='/Dashboard' element={<Dashboard />} ></Route>
-          {/* <Route path='/state' element={<State/>}/>
-      <Route path='/Form' element={<Form/>}/>
+           <Route path='/state' element={<State/>}/>
+     {/* <Route path='/Form' element={<Form/>}/>
       <Route path='/Navbar' element={<Navbar/>}/> */}
-      <Route path='/' element={<Hod/>}/>
+      <Route path='/Hod' element={<Hod/>}/>
         <Route path='/HodTeacher' element={<HodTeacher/>}/>
         <Route path='/Hodstudent' element={<HodStudent/>}/>
         

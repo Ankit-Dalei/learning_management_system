@@ -10,7 +10,9 @@ const HeadNavStudent = () => {
             <div className="hnsh_name">
                 CENTURION UNIVERSITY
             </div>
-            <div className="hnsh_extra"></div>
+            <div className="hnsh_extra">
+              
+            </div>
         </div>
     </div>
     <StudentDash/>

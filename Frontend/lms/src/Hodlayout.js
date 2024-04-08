@@ -3,10 +3,10 @@ import React from 'react'
 const Hodlayout = (props) => {
   return (
     <>
-      <div style={{ height: '100vh' }} className='overflow-hidden'>
+      <div id="hod" className='overflow-hidden m-0 p-0 container-fluid' >
 
 
-        <div className='row '>
+        <div className='row ' style={{height:'100vh',width:'100%'}}>
           <div className=' col-lg-2  border justify-content-center container bg-dark m-0 p-0'>          
 
           
