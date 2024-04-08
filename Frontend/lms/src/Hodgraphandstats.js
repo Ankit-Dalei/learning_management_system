@@ -28,13 +28,13 @@ const Hodgraphandstats = () => {
         }
     ]
     return (
-        <div className='container-fluid d-flex justify-content-center p-0 m-0' style={{height:'100vh',width:'100vw'}}> 
+        <div className='container-fluid d-flex justify-content-center p-0 m-0 ' style={{height:'100vh',width:'100vw'}}> 
 
-            <div className='d-lg-block d-none'></div>
+            <div className='d-lg-block d-none '></div>
 
 
-            <div className='d-flex flex-column my-2'>
-                <div className=' row border border-lg-none border-primary  container-fluid rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',minWidth:'30rem' }}>
+            <div className='d-flex flex-column my-2 '>
+                <div className=' row border border-lg-none border-primary  container-fluid rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
 
                     <div className='col-lg-8 d-flex justify-content-center h-md-50px' style={{minWidth:'80px',maxWidth:'100%',minHeight:'90%'}}>
                         <ResponsiveContainer className='rounded ' >
@@ -61,7 +61,7 @@ const Hodgraphandstats = () => {
                 <div className='d-lg-block d-none' style={{ marginTop: '10%' }}></div>
 
 
-                <div className=' row border border-lg-none border-success   rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '28rem', minHeight: '18rem' }}>
+                <div className=' row border border-lg-none border-success   rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
 
 
                     <div className='col-lg-8'>
@@ -81,10 +81,10 @@ const Hodgraphandstats = () => {
 
 
 
-                <div className=' row border border-lg-none border-danger   rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '28rem', minHeight: '18rem' }}>
+                <div className=' row border border-lg-none border-danger   rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
 
                     <div className='col-lg-4 d-flex justify-content-center'>
-                        <img src="download1.jp" alt="" className=' rounded img-thumbnail ' />
+                        <img src="download1.jpg" alt="" className=' rounded img-thumbnail ' />
 
                     </div>
                     <div className='col-lg-8'>
@@ -100,7 +100,7 @@ const Hodgraphandstats = () => {
 
 
 
-                <div className=' row border border-lg-none border-warning  mb-4 pb-4 rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '28rem', minHeight: '18rem' }}>
+                <div className=' row border border-lg-none border-warning  mb-4 pb-4 rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
 
 
                     <div className='col-lg-8'>
@@ -111,7 +111,7 @@ const Hodgraphandstats = () => {
                         </div>
                     </div>
                     <div className='col-lg-4 d-flex justify-content-center'>
-                        <img src="download1.jp" alt="" className=' rounded img-thumbnail ' />
+                        <img src="download1.jpg" alt="" className=' rounded img-thumbnail ' />
 
                     </div>
                 </div>

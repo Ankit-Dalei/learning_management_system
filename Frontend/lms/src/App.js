@@ -22,7 +22,7 @@ import Dashboard from "./Teacher/Dashboard";
 import State from "./State/State";
 import Form from "./State/Form";
 import Navbar from "./State/Navbar";
-import Login from "./Login/Login";
+import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
 import StudentDash from "./Student/StudentDash";
@@ -31,6 +31,7 @@ import Hod from "./Hod";
 import HodStudent from "./HodStudent/HodStudent";
 import HodTeacher from "./HodTeacher/HodTeacher";
 import HodProfileTemplate from "./HodProfile/HodProfileTemplate";
+import Out from "./Out";
 
 function App() {
   const getMode = () => {
@@ -45,9 +46,11 @@ function App() {
       <BrowserRouter>
         {/* <Header dark={dark} setMode={setMode} /> */}
         <Routes>
+          <Route path="/" element={<Out/>}>
+            <Route index element={<Login/>}/>
           <Route path="/brancee" element={<Brancee />}></Route>
           {/* <Route path="/" element={<House />}></Route> */}
-          <Route path="/" element={<Login />}></Route>
+         
           {/* <Route path="/" element={<Signup />}></Route> */}
           {/* <Route path="/" element={<HeadNavStudent />}></Route> */}
           {/* <Route path="/" element={<StudentDash />}></Route> */}
@@ -78,6 +81,7 @@ function App() {
           <Route path="/Hodstudent" element={<HodStudent />} />
 
           <Route path="/HodProfile" element={<HodProfileTemplate />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

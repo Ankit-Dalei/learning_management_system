@@ -10,7 +10,7 @@ const Hodnavbar = () => {
     };
 
     return (
-        <div>
+        <div className='container-fluid p-0 m-0' style={{width:'100%'}}>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-start">
                 <div className="container-fluid ">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@ const Hodnavbar = () => {
                     </button>
                     <div className='d-block d-lg-none text-white'>
 
-                        <img src="download.jpeg" className='img-thumbnail' alt="Bootstrap" width="30" height="24" />
+                        <img src="download2.jpg" className='img-thumbnail' alt="Bootstrap" width="30" height="24" />
 
                     </div>
 
