@@ -1,6 +1,7 @@
 // TestForm.js
 import React, { useState } from 'react';
 import './TestForm.css';
+import { Link } from 'react-router-dom';
 
 const TestForm = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -22,7 +23,7 @@ const TestForm = () => {
             className={`option ${selectedOption === 'multiple-choice' && 'selected'}`}
             onClick={() => setSelectedOption('multiple-choice')}
           >
-            <span>Multiple Choice Question Test</span>
+            <span><Link to={'/TeacherDashBoard/questionform'}>Multiple Choice Question Test</Link></span>
           </div>
           <div 
             className={`option ${selectedOption === 'coding' && 'selected'}`}

@@ -124,7 +124,15 @@
   height: max-content;
   background-color: transparent;
 }
+.option-button a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
 
+.option-button a:hover {
+  /* Optional: Add hover effect */
+  text-decoration:none;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {

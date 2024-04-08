@@ -31,6 +31,7 @@ import React from 'react';
 
 
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
@@ -41,7 +42,7 @@ const Dashboard = () => {
           <h2>Create Test</h2>
           <div className="dashboard-box-content">
             <p>Create and manage tests for your students.</p>
-            <button>Create Test</button>
+            <button><Link to={'testform'}>Create Test</Link></button>
           </div>
         </div>
         <div className="dashboard-box">

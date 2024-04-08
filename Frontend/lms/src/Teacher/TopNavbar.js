@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './TopNavbar.css';
-// import 'primeicons/primeicons.css';
+import 'primeicons/primeicons.css';
+import { Link, Outlet } from 'react-router-dom'
 
 function TopNavbar() {
   const [profileDropdownVisible, setProfileDropdownVisible] = useState(false);
@@ -25,15 +26,17 @@ function TopNavbar() {
       </nav>
       <div className='low'>
         <div className="left">
-          <button className='option-button'>Home</button>
-          <button className='option-button'>Add Test</button>
-          <button className='option-button'>Edit Test</button>
-          <button className='option-button'>View Test</button>
-          <button className='option-button'>Report</button>
+          <button className='option-button'><Link to={'/TeacherDashBoard'}>Home</Link></button>
+          <button className='option-button'><Link to={'testform'}>Add Test</Link></button>
+          <button className='option-button'><Link to={''}>Edit Test</Link></button>
+          <button className='option-button'><Link to={''}>View Test</Link></button>
+          <button className='option-button'><Link to={''}>Report</Link></button>
         </div>
         <div className="right"></div>
       </div>
+      <Outlet/>
     </div>
+    
   );
 }
 

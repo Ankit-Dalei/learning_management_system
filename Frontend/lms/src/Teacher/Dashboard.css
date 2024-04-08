@@ -28,6 +28,15 @@
   }
    */
 
+   a{
+    color: white;
+    text-decoration: none;
+   }
+   a:hover{
+    color: white;
+    text-decoration: none;
+   }
+
    .dashboard-container {
     font-family: Arial, sans-serif;
     max-width: 800px;

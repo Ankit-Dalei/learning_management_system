@@ -32,7 +32,9 @@ import HodStudent from "./HodStudent/HodStudent";
 import HodTeacher from "./HodTeacher/HodTeacher";
 import HodProfileTemplate from "./HodProfile/HodProfileTemplate";
 import Out from "./Out";
-
+import TopNavbar from "./Teacher/TopNavbar";
+import TestForm from "./Teacher/TestForm";
+import QuestionForm from "./Teacher/QuestionForm";
 
 function App() {
   const getMode = () => {
@@ -49,24 +51,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Out/>}>
             <Route index element={<Login/>}/>
-             <Route path="/forgotpass" element={<Signup />}></Route>
+            <Route path="/forgotpass" element={<Signup />}></Route>
 
           <Route path="/stdash" element={<HeadNavStudent />}></Route>
           {/* <Route path="/" element={<StudentDash />}></Route> */}
           
           <Route path="/management" element={<Header dark={dark} setMode={setMode} />}>
             <Route index element={<House />} />
-          {/* <Route index path="/management" element={<House />}></Route> */}
-         
             <Route path="brancee" element={<Brancee />}></Route>
-          
-          
             <Route path="course" element={<Course />}></Route>
             <Route path="school" element={<School />}></Route>
             <Route path="teacher" element={<Teacher />}></Route>
             <Route path="student" element={<Student />}></Route>
             <Route path="campus" element={<Campus />}></Route>
-
           {/* add form */}
             <Route path="addschool" element={<AddSchool />}></Route>
             <Route path="addbrance" element={<AddBrance />}></Route>
@@ -81,7 +78,11 @@ function App() {
           </Route>
 
 
-          <Route path="/Dashboard" element={<Dashboard />}></Route>
+          <Route path="/TeacherDashBoard" element={<TopNavbar />}>
+            <Route index element={<Dashboard />} />
+            <Route path="testform" element={<TestForm />}></Route>
+            <Route path="questionform" element={<QuestionForm />} />
+          </Route>
           <Route path="/state" element={<State />} />
           {/* <Route path='/Form' element={<Form/>}/>
       <Route path='/Navbar' element={<Navbar/>}/> */}
