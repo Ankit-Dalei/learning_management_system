@@ -2,22 +2,20 @@ import React from 'react';
 
 const HodTeacherMap = (props) => {
   return (
-    
-    <div className=' row border rounded-4 border-light m-2 text-light' style={{height:'20rem',width:'32rem'}}>
-      
-        <img src={props.img} alt="" className='col-5 img-fluid img-thumbnail rounded-4' />
-     
-      <div className='col-7 mx-2 text-light d-flex justify-content-center  container-fluid row p-4 d-flex flex-column'>
-        <h4 className='text-center '>{props.name}</h4>
+    <div className='row border rounded-4 border-light m-2 text-light p-4' style={{ width: '100%', maxWidth: '32rem' }}>
+      <div className='col-12 col-md-5 mb-3 mb-md-0 d-flex align-items-center justify-content-center'>
+        <img src={props.img} alt="" className='img-fluid img-thumbnail rounded-4' style={{ width: '10rem', height: '10rem', objectFit: 'cover' }} />
+      </div>
+      <div className='col-12 col-md-7 d-flex flex-column justify-content-center'>
+        <h4 className='text-center mb-3'>{props.name}</h4>
         <div>CONTACT DETAILS</div>
         <hr />
-        <div className='col text-break'>EMAIL : {props.email}</div>
-        <div className='col text-break'>Contact : {props.phone}</div>
-        <div className='col text-break'>Address : {props.address}</div>
-        <div className='row d-flex flex-row container-fluid mx-3' style={{width:'100%'}}>
-          <div className='col-5'><button className=' btn btn-sm btn-outline-warning '>view</button></div>
-          <div className='col-5'><button className=' btn btn-sm btn-outline-danger'>delete</button></div>
-          
+        <div className='mb-2'>EMAIL: {props.email}</div>
+        <div className='mb-2'>Contact: {props.phone}</div>
+        <div className='mb-2'>Address: {props.address}</div>
+        <div className='d-flex justify-content-center mt-3'>
+          <button className='btn btn-sm btn-outline-warning'>View</button>
+          <button className='btn btn-sm btn-outline-danger ml-2'>Delete</button>
         </div>
       </div>
     </div>
