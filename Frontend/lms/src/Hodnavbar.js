@@ -26,7 +26,7 @@ const Hodnavbar = () => {
                     <div className="collapse navbar-collapse flex-column" id="navbarTogglerDemo01">
                         <div className='d-none d-lg-block text-white' style={{ height: '80px' }}>
 
-                            <img src="download.jpeg" className='img-thumbnail' alt="Bootstrap" width="40" height="10px" />
+                            <img src="download2.jpg" className='img-thumbnail' alt="Bootstrap" width="40" height="10px" />
                             <hr className='bg-white' />
 
                         </div>
@@ -34,7 +34,7 @@ const Hodnavbar = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
                             <li className="nav-item ">
                                 
-                               <NavLink to='/' className='nav-link'>Home</NavLink>
+                               <NavLink to='/Hod' className='nav-link'>Home</NavLink>
                                 
                             </li>
                             <li className="nav-item">

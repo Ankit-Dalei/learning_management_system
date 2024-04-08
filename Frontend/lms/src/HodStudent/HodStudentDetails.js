@@ -109,7 +109,7 @@ const HodStudentDetails = () => {
       </table>
       </div>
 
-      <div className={viewdetail} >
+      <div className={viewdetail} style={{}}>
       <button className='btn' onClick={()=>{
         setAllvalue('d-block');
         setViewDetail('d-none');
@@ -119,9 +119,9 @@ const HodStudentDetails = () => {
       <div className='overflow-auto text-dark d-flex justify-content-center align-items-center' style={{ height: '100%' }}>
         
       <div className="container">
-        <div className="main-body">
-          <div className="row gutters-sm">
-            <div className="col-md-4 mb-3">
+        <div className="main-body container-fluid">
+          <div className="container-fluid row" style={{ height: '100%',width:'100%' }}>
+            <div className="col-md-4 mb-3" style={{height:'25rem',width:'20rem'}}>
               <div className="card">
                 <div className="card-body">
                   <div className="d-flex flex-column align-items-center ">
@@ -140,40 +140,32 @@ const HodStudentDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8" style={{height:'24rem',width:'20rem'}}>
               
-              <div className="col-sm-6 mb-3">
+              <div className="col-sm-6 mb-3 container-fluid" style={{height:'24rem',width:'20rem'}}>
                 <div className="card h-100">
                   <div className="card-body">
-                    <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-2">SUBJECT PROGRESSION</i></h6>
+                    <h6 className="d-flex align-items-center mb-1"><i className="material-icons text-info mr-2">SUBJECT PROGRESSION</i></h6>
                     <small>C</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
+                    <div className="progress mb-1" style={{ height: '5px' }}>
                       <div className="progress-bar bg-success" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small>Python</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
+                    <div className="progress 1" style={{ height: '5px' }}>
                       <div className="progress-bar bg-secondary" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small>Data Structure</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
+                    <div className="progress 1" style={{ height: '5px' }}>
                       <div className="progress-bar bg-warning" role="progressbar" style={{ width: '72%' }} aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small>Java</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
+                    <div className="progress 1" style={{ height: '5px' }}>
                       <div className="progress-bar bg-danger" role="progressbar" style={{ width: '89%' }} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <small>React</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
-                      <div className="progress-bar bg-info" role="progressbar" style={{ width: '55%' }} aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>Spring Boot</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
-                      <div className="progress-bar bg-primary" role="progressbar" style={{ width: '66%' }} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>Android Development</small>
-                    <div className="progress mb-3" style={{ height: '5px' }}>
-                      <div className="progress-bar bg-dark" role="progressbar" style={{ width: '66%' }} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                   
+                    
+                   
+                    
                   </div>
                 </div>
               </div>

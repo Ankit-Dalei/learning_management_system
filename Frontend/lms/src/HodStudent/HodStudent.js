@@ -10,8 +10,8 @@ const HodStudent = () => {
     <div>
       <Hodlayout>
         <Hodnavbar/>
-        {/* <Hodstudentbody/> */}
-        <HodStudentView/> 
+        <Hodstudentbody/>
+        {/* <HodStudentView/>  */}
         {/* <HodStudentDetails/> */}
       </Hodlayout>
     </div>

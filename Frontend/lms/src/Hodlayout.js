@@ -7,7 +7,7 @@ const Hodlayout = (props) => {
 
 
         <div className='row ' style={{height:'100vh',width:'100%'}}>
-          <div className=' col-lg-2  border justify-content-center container bg-dark m-0 p-0'>          
+          <div className=' col-lg-2  border d-flex justify-content-center container bg-dark m-0 p-0'>          
 
           
             {props.children[0]}
@@ -18,7 +18,7 @@ const Hodlayout = (props) => {
              
              
             </div>
-            <div className='bg-dark  overflow-auto ' style={{ height: '93vh' }}>
+            <div className='bg-dark  overflow-auto ' style={{ height: '93vh',width:'100%' }}>
               
 
               {props.children[1]}

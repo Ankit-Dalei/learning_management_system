@@ -2,7 +2,7 @@ import React from 'react';
 
 const HodTeacherMap = (props) => {
   return (
-    <div className='card mb-4 text-light bg-dark border border-primary border-2'>
+    <div className='card  text-light bg-dark border border-primary border-2'>
       <div className='row g-0'>
         <div className='col-md-5'>
           <img

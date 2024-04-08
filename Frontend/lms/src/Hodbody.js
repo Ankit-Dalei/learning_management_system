@@ -4,10 +4,10 @@ import Hodgraphandstats from './Hodgraphandstats'
 
 const Hodbody = () => {
     return (
-      <div className='text-white bg-dark  container-fluid'>
-        <div className='row row-cols-lg-4 row-cols-1 d-flex justify-content-evenly p-4'>
+      <div className='text-white bg-dark  container-fluid' style={{height:'100%',width:'100%'}}>
+        <div className='row row-cols-lg-4 row-cols-1 d-flex justify-content-evenly ' style={{height:'100%',width:'100%'}}>
           
-        <div className="col-lg-2 card text-white bg-primary mb-3" style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
+        <div className="col-lg-2 card text-white bg-primary " style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
           <div className="card-header rounded">STUDENT</div>
           <div className="card-body">
             <h5 className="card-title"> Review the student information and assess their academic progress.</h5>
@@ -29,20 +29,20 @@ const Hodbody = () => {
             </div>
             </div>
         </div> */}
-        <div className="card text-white col bg-success mb-3" style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
+        <div className="card text-white col bg-success " style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
           <div className="card-header rounded">TEACHERS</div>
           <div className="card-body">
             <h5 className="card-title">Review the teachers' information and evaluate their assigned tasks.</h5>
           </div>
         </div>
-        <div className="card text-white col bg-danger mb-3" style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
+        <div className="card text-white col bg-danger " style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
           <div className="card-header rounded">BATCHES & COURSES</div>
           <div className="card-body">
             <h5 className="card-title">Verify the batch information and review the details of the courses offered.</h5>
           </div>
         </div>
 
-        <div className="card text-white col bg-warning mb-3" style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
+        <div className="card text-white col bg-warning " style={{ maxWidth: '20rem',minWidth:'15rem',height:'10rem' }}>
           <div className="card-header rounded">QUIZ & ASSIGNMENTS</div>
           <div className="card-body">
             <h5 className="card-title">Review the quizzes and assignments.</h5>
@@ -51,7 +51,9 @@ const Hodbody = () => {
         
        
    </div>
-   <Hodgraphandstats/>
+   <div className='d-flex justify-content-center m-0 p-0'>   <Hodgraphandstats/>
+   </div>
+
       </div>
     )
 }

@@ -3,9 +3,10 @@ import HodStudentDetails from './HodStudentDetails'
 
 const Hodstudentbody = () => {
   return (
-    <div className='container bg-dark text-white overflow-auto' style={{height:'100vh'}}>
+    <div className=' bg-dark text-white ' style={{height:'100vh'}}>
       
       <div className='container row mt-3 d-flex justify-content-center' >
+        
         <div className='col-8' >
         <input type="search" placeholder='Search'className=' form-control'/>
         </div>
@@ -15,6 +16,7 @@ const Hodstudentbody = () => {
       </div>
       
       <div>
+        
         <HodStudentDetails/>
       </div>
       
