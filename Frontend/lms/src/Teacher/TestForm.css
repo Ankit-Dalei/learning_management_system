@@ -115,7 +115,7 @@
     background-color: #286090;
   }
   
-  button[type="submit"] {
+  .test-form-container button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
@@ -128,7 +128,7 @@
     transition: background-color 0.3s ease;
   }
   
-  button[type="submit"]:hover {
+  .test-form-container button[type="submit"]:hover {
     background-color: #45a049;
   }
   

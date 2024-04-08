@@ -126,7 +126,7 @@
     background-color: #45a049;
   }
   
-  button {
+  .question-form button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -139,7 +139,7 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .question-form button:hover {
     background-color: #286090;
   }
   

@@ -1,41 +1,6 @@
-/* 
 
-.dashboard-container {
-    background-color: rgb(8, 8, 8);
-    color: white;
-    padding: 20px;
-    height:75vh;
-    
-  }
-  
-  .dashboard-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .dashboard-box {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    flex-basis: calc(33.33% - 20px); 
-    margin:30px;
-  }
-  
-  .dashboard-box h2 {
-    margin-top: 0;
-  }
-   */
 
-   a{
-    color: white;
-    text-decoration: none;
-   }
-   a:hover{
-    color: white;
-    text-decoration: none;
-   }
+  
 
    .dashboard-container {
     font-family: Arial, sans-serif;
@@ -98,3 +63,10 @@
     background-color: #286090;
   }
   
+  .dashboard-box-content a{
+    color: white;
+    text-decoration: none;
+  }
+  .dashboard-box-content a:hover{
+    text-decoration: none;
+  }
