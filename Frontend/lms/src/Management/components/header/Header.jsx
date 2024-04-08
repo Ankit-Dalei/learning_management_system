@@ -14,6 +14,7 @@ import Modal from '@mui/material/Modal';
 import AddSchool from "../../Add/AddSchool/AddSchool"
 import { useNavigate } from "react-router-dom"
 import AddBrance from "../../Add/AddBrance/AddBrance"
+import { Outlet } from 'react-router-dom'
 const Header = ({ dark, setMode }) => {
 
 
@@ -36,25 +37,25 @@ const Header = ({ dark, setMode }) => {
     const changeHandle = (e) => {
        
         if (e === '/addbrance')
-        navigate('/addbrance')
+        navigate('addbrance')
        else if (e === '/addschool')
-        navigate('/addschool')
+        navigate('addschool')
        else if (e === '/addteacher')
-        navigate('/addteacher')
+        navigate('addteacher')
        else if (e === '/addcampus')
-        navigate('/addcampus')
+        navigate('addcampus')
        else if (e === '/addcourse')
-        navigate('/addcourse')
+        navigate('addcourse')
         else if (e === '/addstudent')
-        navigate('/addstudent')
+        navigate('addstudent')
         else if (e === '/addsection')
-        navigate('/addsection')
+        navigate('addsection')
         else if (e === '/addcsb')
-        navigate('/addcsb')
+        navigate('addcsb')
         else if (e === '/addcsbc')
-        navigate('/addcsbc')
+        navigate('addcsbc')
         else if (e === '/')
-        navigate('/')
+        navigate('')
     }
 
 
@@ -138,6 +139,7 @@ const Header = ({ dark, setMode }) => {
                     </Box>
                 </Modal>
             </section>
+            <Outlet/>
         </>
     )
 }

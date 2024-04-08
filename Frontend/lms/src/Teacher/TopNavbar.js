@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './TopNavbar.css';
-import 'primeicons/primeicons.css';
+// import 'primeicons/primeicons.css';
 
 function TopNavbar() {
   const [profileDropdownVisible, setProfileDropdownVisible] = useState(false);

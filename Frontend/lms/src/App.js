@@ -33,6 +33,7 @@ import HodTeacher from "./HodTeacher/HodTeacher";
 import HodProfileTemplate from "./HodProfile/HodProfileTemplate";
 import Out from "./Out";
 
+
 function App() {
   const getMode = () => {
     return JSON.parse(localStorage.getItem("mode"));
@@ -44,34 +45,42 @@ function App() {
   return (
     <div className={dark ? "app" : "light"}>
       <BrowserRouter>
-        {/* <Header dark={dark} setMode={setMode} /> */}
+        
         <Routes>
           <Route path="/" element={<Out/>}>
             <Route index element={<Login/>}/>
-          <Route path="/brancee" element={<Brancee />}></Route>
-          {/* <Route path="/" element={<House />}></Route> */}
-         
-          {/* <Route path="/" element={<Signup />}></Route> */}
-          {/* <Route path="/" element={<HeadNavStudent />}></Route> */}
-          {/* <Route path="/" element={<StudentDash />}></Route> */}
-          <Route path="/course" element={<Course />}></Route>
-          <Route path="/addschool" element={<AddSchool />}></Route>
+             <Route path="/forgotpass" element={<Signup />}></Route>
 
-          <Route path="/school" element={<School />}></Route>
-          <Route path="/teacher" element={<Teacher />}></Route>
-          <Route path="/student" element={<Student />}></Route>
-          <Route path="/campus" element={<Campus />}></Route>
+          <Route path="/stdash" element={<HeadNavStudent />}></Route>
+          {/* <Route path="/" element={<StudentDash />}></Route> */}
+          
+          <Route path="/management" element={<Header dark={dark} setMode={setMode} />}>
+            <Route index element={<House />} />
+          {/* <Route index path="/management" element={<House />}></Route> */}
+         
+            <Route path="brancee" element={<Brancee />}></Route>
+          
+          
+            <Route path="course" element={<Course />}></Route>
+            <Route path="school" element={<School />}></Route>
+            <Route path="teacher" element={<Teacher />}></Route>
+            <Route path="student" element={<Student />}></Route>
+            <Route path="campus" element={<Campus />}></Route>
 
           {/* add form */}
-          <Route path="/addbrance" element={<AddBrance />}></Route>
-          <Route path="/addschool" element={<AddSchool />}></Route>
-          <Route path="/addteacher" element={<AddTech />}></Route>
-          <Route path="/addcampus" element={<AddCampus />}></Route>
-          <Route path="/addcourse" element={<AddCourse />}></Route>
-          <Route path="/addstudent" element={<AddStudent />}></Route>
-          <Route path="/addsection" element={<AddSection />}></Route>
-          <Route path="/addcsb" element={<AddCSB />}></Route>
-          <Route path="/addcsbc" element={<AddCSBC />}></Route>
+            <Route path="addschool" element={<AddSchool />}></Route>
+            <Route path="addbrance" element={<AddBrance />}></Route>
+            <Route path="addschool" element={<AddSchool />}></Route>
+            <Route path="addteacher" element={<AddTech />}></Route>
+            <Route path="addcampus" element={<AddCampus />}></Route>
+            <Route path="addcourse" element={<AddCourse />}></Route>
+            <Route path="addstudent" element={<AddStudent />}></Route>
+            <Route path="addsection" element={<AddSection />}></Route>
+            <Route path="addcsb" element={<AddCSB />}></Route>
+            <Route path="addcsbc" element={<AddCSBC />}></Route>
+          </Route>
+
+
           <Route path="/Dashboard" element={<Dashboard />}></Route>
           <Route path="/state" element={<State />} />
           {/* <Route path='/Form' element={<Form/>}/>

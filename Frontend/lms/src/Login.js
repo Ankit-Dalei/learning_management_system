@@ -1,5 +1,7 @@
 import React from 'react'
 import './Login/Login.css'
+import { Link } from 'react-router-dom'
+
 
 const Login = () => {
   return (
@@ -32,7 +34,7 @@ const Login = () => {
                     {/* Signup */}
                   </div>
                   <div className="ill11_r">
-                    Forgot Password ?
+                  <Link to={'/forgotpass'}>Forgot Password ?</Link>  
                   </div>
                 </div>
                 <div className="inp_lb_12">
