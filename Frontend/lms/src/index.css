@@ -13,10 +13,15 @@ code {
 }
 
 
-.active{
-  border: 1px solid white;
-  border-radius: 3px;
-  
+.nav-link {
+  color: #ffffff; /* Default color for links */
+  padding: 5px 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.nav-link.active {
+  border: 1px solid white; /* Border for active link */
+  border-radius: 3px; /* Rounded corners for active link */
 }
 @media (min-width: 992px) {
   .border-lg-none {
