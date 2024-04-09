@@ -40,12 +40,12 @@
     margin-top: 0;
   }
   
-  /* Adjustments for different box content */
+  
   .dashboard-box .dashboard-box-content {
     margin-top: 20px;
   }
   
-  /* Example of styling for button */
+  
   .dashboard-box button {
     display: block;
     width: 100%;

@@ -28,8 +28,8 @@ function TopNavbar() {
         <div className="left">
           <button className='option-button'><Link to={'/TeacherDashBoard'}>Home</Link></button>
           <button className='option-button'><Link to={'testform'}>Add Test</Link></button>
-          <button className='option-button'><Link to={''}>Edit Test</Link></button>
-          <button className='option-button'><Link to={''}>View Test</Link></button>
+          <button className='option-button'><Link to={'edittest'}>Edit Test</Link></button>
+          <button className='option-button'><Link to={'viewtest'}>View Test</Link></button>
           <button className='option-button'><Link to={''}>Report</Link></button>
         </div>
         <div className="right"></div>

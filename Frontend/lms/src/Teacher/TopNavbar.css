@@ -1,4 +1,4 @@
-/* Base styles */
+
 .navbar {
   background-color: rgb(67, 67, 67);
   color: white;
@@ -18,7 +18,9 @@
 .navbar-buttons {
   padding-right: 5%;
 }
-
+.profile-btn, .button-24 {
+  margin-left: 20px; 
+}
 .navbar-buttons button {
   background-color: transparent;
   color: white;
@@ -70,6 +72,7 @@
   background-color: initial;
   background-position: 0 0;
   color: #FF4742;
+  text-decoration: none; 
 }
 
 .button-24:active {
@@ -78,6 +81,7 @@
 
 .navbar-buttons {
   position: relative;
+  
 }
 
 .dropdown {
@@ -108,33 +112,39 @@
   align-items: center;
   justify-content: left;
   height: 100%;
-  margin-left: 1%;
+  margin-left: 5%;
   margin-bottom: 0;
 
 }
-.left button{
-  /* background-color: #fff; */
-  height: 10px;
+
+.left button {
+  margin-right: 15px; 
+  height: 40px; 
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  border: none; 
+  cursor: pointer; 
 }
+
 .option-button {
   width:max-content;
   height: max-content;
   background-color: transparent;
 }
+
 .option-button a {
   color: white;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  display: block; 
 }
 
 .option-button a:hover {
-  /* Optional: Add hover effect */
-  text-decoration:none;
+  text-decoration: none;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 768px) {
   .navbar-brand {
     font-size: 0.8em;

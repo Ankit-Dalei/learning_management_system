@@ -1,145 +1,91 @@
-/* styles.css */
 
-/* .question-page {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .question-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .question-form h2 {
-    margin-top: 0;
-  }
-  
-  .options-container {
-    margin-bottom: 10px;
-  }
-  
-  .options-container label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .saved-questions {
-    margin-top: 20px;
-  }
-  
-  .question {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .question h3 {
-    margin-top: 0;
-  }
-  
-  .question ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .question ul li {
-    margin-bottom: 5px;
-  }
-   */
+.question-form {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: large;
+}
 
-   .question-form {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-size: large;
-  }
-  
-  .question {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: large;
-  }
-  
-  .question h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .add-question {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  .add-question h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .add-question label {
-    display: block;
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .add-question input[type="text"],
-  .add-question select {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .add-question .options-container label {
-    display: inline-block;
-    width: 48%;
-    margin-right: 2%;
-  }
-  
-  .add-question button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .add-question button:hover {
-    background-color: #45a049;
-  }
-  
-  .question-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #337ab7;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .question-form button:hover {
-    background-color: #286090;
-  }
-  
+.question-form h2,
+.question-form h3,
+.add-question h3,
+.add-question label {
+  color: #000000; 
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: large;
+}
+
+.add-question {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.add-question label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555; 
+}
+.test-name-input {
+  color: #333; 
+}
+
+.add-question input[type="text"],
+.add-question select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #000000; 
+}
+
+.add-question .options-container label {
+  display: inline-block;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.add-question button,
+.question-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-question button:hover,
+.question-form button:hover {
+  background-color: #45a049;
+}
+
+.add-question button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.question-form button {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+.question-form button:hover {
+  background-color: #286090;
+}

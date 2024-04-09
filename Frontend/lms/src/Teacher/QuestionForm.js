@@ -1,4 +1,4 @@
-// QuestionForm.js
+
 import React, { useState } from 'react';
 import './QuestionForm.css';
 

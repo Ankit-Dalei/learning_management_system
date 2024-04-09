@@ -35,6 +35,8 @@ import Out from "./Out";
 import TopNavbar from "./Teacher/TopNavbar";
 import TestForm from "./Teacher/TestForm";
 import QuestionForm from "./Teacher/QuestionForm";
+import EditTest from "./Teacher/EditTest";
+import ViewTest from "./Teacher/ViewTest";
 
 function App() {
   const getMode = () => {
@@ -82,6 +84,8 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="testform" element={<TestForm />}></Route>
             <Route path="questionform" element={<QuestionForm />} />
+            <Route path="edittest" element={<EditTest />} />
+            <Route path="viewtest" element={<ViewTest />} />
           </Route>
           <Route path="/admin" element={<State />} />
           <Route path='/management_Assign' element={<Form/>}/>
