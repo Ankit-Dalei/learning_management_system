@@ -38,6 +38,12 @@ import QuestionForm from "./Teacher/QuestionForm";
 import EditTest from "./Teacher/EditTest";
 import ViewTest from "./Teacher/ViewTest";
 
+import Hodlayout from "./Hodlayout";
+import Hodbody from "./Hodbody";
+import HodTeacherbody from "./HodTeacher/HodTeacherbody";
+import Hodstudentbody from "./HodStudent/Hodstudentbody";
+import HodProfile from "./HodProfile/HodProfile";
+
 function App() {
   const getMode = () => {
     return JSON.parse(localStorage.getItem("mode"));
@@ -90,11 +96,17 @@ function App() {
           <Route path="/admin" element={<State />} />
           <Route path='/management_Assign' element={<Form/>}/>
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
-          <Route path="/Hod" element={<Hod />} />
+     <Route path="/Hod" element={<Hod/>}>
+      <Route index element={<Hodbody/>}/>
+      <Route path="Teacher" element={<HodTeacherbody/>}/>
+      <Route path="Student" element={<Hodstudentbody/>}/>
+      <Route path="Profile" element={<HodProfile/>}/>
+     </Route>
+          {/* <Route path="/Hod" element={<Hod />} />
           <Route path="/HodTeacher" element={<HodTeacher />} />
           <Route path="/Hodstudent" element={<HodStudent />} />
 
-          <Route path="/HodProfile" element={<HodProfileTemplate />} />
+          <Route path="/HodProfile" element={<HodProfileTemplate />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

@@ -7,7 +7,7 @@ const Hod = () => {
   return (
   <Hodlayout>
     <Hodnavbar/>
-    <Hodbody/>
+    
   </Hodlayout>
   )
 }
