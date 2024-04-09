@@ -2,9 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
-      <nav class="navbar bg-dark">
-        <div className="text-white  " >
+    <div className='container-fluid m-0 p-0' >
+      <nav className='container-fluid navbar bg-dark ' >
+        <div className="text-white " >
         
               <h3>Centurion University</h3>
 

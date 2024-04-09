@@ -83,9 +83,9 @@ function App() {
             <Route path="testform" element={<TestForm />}></Route>
             <Route path="questionform" element={<QuestionForm />} />
           </Route>
-          <Route path="/state" element={<State />} />
-          {/* <Route path='/Form' element={<Form/>}/>
-      <Route path='/Navbar' element={<Navbar/>}/> */}
+          <Route path="/admin" element={<State />} />
+          <Route path='/management_Assign' element={<Form/>}/>
+     {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
           <Route path="/Hod" element={<Hod />} />
           <Route path="/HodTeacher" element={<HodTeacher />} />
           <Route path="/Hodstudent" element={<HodStudent />} />

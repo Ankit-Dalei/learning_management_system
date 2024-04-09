@@ -1,53 +1,79 @@
-// import React, { useState } from 'react'
-// import './Form.css'
-// import { Link } from 'react-router-dom';
-// import user_icon from './person.png'
-// import email_icon from './email.png'
-// import password_icon from './password.png'
+import React, { useState } from 'react'
+import {useNavigate} from 'react-router-dom';
+import './Form.css'
+import { Link } from 'react-router-dom';
+import user_icon from './person.png'
+import email_icon from './email.png'
+import password_icon from './password.png'
 
-// const Form = () => {
-  
+const Form = () => {
+  const navigate=useNavigate();
+  const [data,setdata]=useState({
+    name: '',
+    phone: '',
+    role: '',
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e) =>{
+    const{name,value}=e.target;
+    setdata({...data,[name]:value});
+  }
+
+  const handleSubmit = async (e) => {
+    console.log("object")
+    e.preventDefault();
+    const dr={...data}
+    const name=dr.name
+    const phone=dr.phone
+    const role=dr.role
+    const email=dr.email
+    const password=dr.password
+    const Data={name,phone,role,email,password}
+    console.log(Data)
+  };
     
  
-//   return (
+  return (
     
-//     <div >
-//     <div className="container my-1 " >
-//      <div className='header'>
-//         <div className="text">Add Management</div>
-//         <div className="underline"></div>
-//       </div>
-//       <div className="inputs">
-//         <div className="input">
-//           <img src={user_icon} alt=""/>
-//           <input type="text" placeholder="Name"  />
-//         </div>
-//         <div className="input">
-//           <img src={user_icon} alt=""/>
-//           <input type="text" placeholder="Phone Number"  />
-//         </div>
-//         <div className="input">
-//           <img src={user_icon} alt=""/>
-//           <input type="text" placeholder="Role"  />
-//         </div>
-//         <div className="input">
-//           <img src={email_icon} alt=""/>
-//           <input type="email" placeholder="Email "   />
-//         </div>
-//         <div className="input">
-//           <img src={password_icon} alt=""/>
-//           <input type="password" placeholder="Password" />
-//         </div>
-//       </div>
-//       <Link to='/' className='nav-link'>
-//       <div className="submit-container d-flex justify-content-center">
-//       <div className="submit">Submit</div>
-//       </div>
-//       </Link>      
-//     </div>
-//     </div>
+    <div  >
+    <div className="container my-0 " >
+     <div className='header '>
+        <div className="text">Add Management</div>
+        <div className="underline"></div>
+      </div>
+      <div className="inputs">
+        <div className="input">
+          <img src={user_icon} alt=""/>
+          <input type="text" placeholder="Name" value={data.name} name="name" onChange={handleChange} />
+        </div>
+        <div className="input">
+          <img src={user_icon} alt=""/>
+          <input type="number" placeholder="Phone Number"  value={data.phone} name="phone" onChange={handleChange} />
+        </div>
+        <div className="input">
+          <img src={user_icon} alt=""/>
+          <input type="text" placeholder="Role" name="role"  value={data.role} onChange={handleChange} />
+        </div>
+        <div className="input">
+          <img src={email_icon} alt=""/>
+          <input type="email" placeholder="Email " name="email"  value={data.email} onChange={handleChange}  />
+        </div>
+        <div className="input">
+          <img src={password_icon} alt=""/>
+          <input type="password" placeholder="Password" name="password"  value={data.password} onChange={handleChange}/>
+        </div>
+      </div>
+      <button className='' onClick={handleSubmit}>
+      <div className="submit-container d-flex justify-content-center">
+      <div className="submit">Submit</div>
+      </div>
+      </button>      
+    </div>
+    </div>
     
-//   )
-// }
+  )
+}
 
-// export default Form
+export default Form
