@@ -38,36 +38,36 @@ const Form = () => {
   return (
     
     <div  >
-    <div className="container my-0 " >
-     <div className='header '>
-        <div className="text">Add Management</div>
-        <div className="underline"></div>
+    <div className="admin_container my-0 " >
+     <div className='admin_header '>
+        <div className="admin_text">Add Management</div>
+        <div className="admin_underline"></div>
       </div>
-      <div className="inputs">
-        <div className="input">
+      <div className="admin_inputs">
+        <div className="admin_input">
           <img src={user_icon} alt=""/>
           <input type="text" placeholder="Name" value={data.name} name="name" onChange={handleChange} />
         </div>
-        <div className="input">
+        <div className="admin_input">
           <img src={user_icon} alt=""/>
           <input type="number" placeholder="Phone Number"  value={data.phone} name="phone" onChange={handleChange} />
         </div>
-        <div className="input">
+        <div className="admin_input">
           <img src={user_icon} alt=""/>
           <input type="text" placeholder="Role" name="role"  value={data.role} onChange={handleChange} />
         </div>
-        <div className="input">
+        <div className="admin_input">
           <img src={email_icon} alt=""/>
           <input type="email" placeholder="Email " name="email"  value={data.email} onChange={handleChange}  />
         </div>
-        <div className="input">
+        <div className="admin_input">
           <img src={password_icon} alt=""/>
           <input type="password" placeholder="Password" name="password"  value={data.password} onChange={handleChange}/>
         </div>
       </div>
       <button className='' onClick={handleSubmit}>
-      <div className="submit-container d-flex justify-content-center">
-      <div className="submit">Submit</div>
+      <div className="admin_submit-container d-flex justify-content-center">
+      <div className="admin_submit">Submit</div>
       </div>
       </button>      
     </div>
