@@ -45,6 +45,7 @@ import HodTeacherInfo from "./HodTeacher/HodTeacherInfo";
 import HodTeacherDetails from "./HodTeacher/HodTeacherDetails";
 import HodStudentDetails from "./HodStudent/HodStudentDetails";
 import HodStudentInfo from "./HodStudent/HodStudentInfo";
+import HodOutlet from "./HodOutlet";
 
 function App() {
   const getMode = () => {
@@ -99,7 +100,8 @@ function App() {
           <Route path='/management_Assign' element={<Form/>}/>
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
      <Route path="/Hod" element={<Hod/>}>
-      <Route index element={<Hodbody/>}/>
+      <Route index element={<HodOutlet/>}/>
+      <Route path="Home" element={<Hodbody/>}/>
       <Route path="Teacher" element={<HodTeacherbody/>}>
         <Route index element={<HodTeacherDetails/>}/>
         <Route path="TeacherDetails" element={<HodTeacherInfo/>}/>
