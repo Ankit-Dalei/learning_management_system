@@ -8,7 +8,7 @@ const Hodlayout = (props) => {
 
 
         <div className='row p-0 m-0 bg-dark' style={{height:'100vh',width:'100%'}}>
-          <div className=' col-lg-2  border d-flex justify-content-center container-fluid bg-dark m-0 mb-3 p-0' >          
+          <div className='hodlayout col-lg-2  border d-flex justify-content-center container-fluid bg-dark m-0 mb-3 p-0' style={{}}>          
 
           
             <Hodnavbar/>
