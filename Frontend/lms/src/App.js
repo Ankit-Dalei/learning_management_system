@@ -28,9 +28,7 @@ import Head from "./Management/components/head/Head";
 import StudentDash from "./Student/StudentDash";
 import HeadNavStudent from "./Student/HeadNavStudent";
 import Hod from "./Hod";
-import HodStudent from "./HodStudent/HodStudent";
-import HodTeacher from "./HodTeacher/HodTeacher";
-import HodProfileTemplate from "./HodProfile/HodProfileTemplate";
+
 import Out from "./Out";
 import TopNavbar from "./Teacher/TopNavbar";
 import TestForm from "./Teacher/TestForm";
@@ -38,13 +36,15 @@ import QuestionForm from "./Teacher/QuestionForm";
 import EditTest from "./Teacher/EditTest";
 import ViewTest from "./Teacher/ViewTest";
 
-import Hodlayout from "./Hodlayout";
+
 import Hodbody from "./Hodbody";
 import HodTeacherbody from "./HodTeacher/HodTeacherbody";
 import Hodstudentbody from "./HodStudent/Hodstudentbody";
 import HodProfile from "./HodProfile/HodProfile";
 import HodTeacherInfo from "./HodTeacher/HodTeacherInfo";
 import HodTeacherDetails from "./HodTeacher/HodTeacherDetails";
+import HodStudentDetails from "./HodStudent/HodStudentDetails";
+import HodStudentInfo from "./HodStudent/HodStudentInfo";
 
 function App() {
   const getMode = () => {
@@ -104,7 +104,10 @@ function App() {
         <Route index element={<HodTeacherDetails/>}/>
         <Route path="TeacherDetails" element={<HodTeacherInfo/>}/>
       </Route>
-      <Route path="Student" element={<Hodstudentbody/>}/>
+      <Route path="Student" element={<Hodstudentbody/>}>
+        <Route index element={<HodStudentDetails/>}/>
+        <Route path="StudentDetails" element={<HodStudentInfo/>}/>
+      </Route>
       <Route path="Profile" element={<HodProfile/>}/>
      </Route>
           {/* <Route path="/Hod" element={<Hod />} />

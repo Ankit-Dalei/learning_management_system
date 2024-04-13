@@ -1,5 +1,6 @@
 import React from 'react'
 import HodStudentDetails from './HodStudentDetails'
+import { Outlet } from 'react-router-dom'
 
 const Hodstudentbody = () => {
   return (
@@ -15,7 +16,7 @@ const Hodstudentbody = () => {
       </div>
       
     </div>
-    <HodStudentDetails/>
+    <Outlet/>
     </>
   )
 }
