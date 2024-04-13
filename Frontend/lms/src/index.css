@@ -18,6 +18,10 @@ code {
   padding: 5px 10px; /* Adjust padding as needed */
   text-decoration: none; /* Remove underline from links */
 }
+.active{
+  border: 1px solid white; /* Border for active link */
+  border-radius: 3px;
+}
 
 .nav-link.active {
   border: 1px solid white; /* Border for active link */

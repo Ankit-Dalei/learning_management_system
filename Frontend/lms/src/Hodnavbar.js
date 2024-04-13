@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation,NavLink } from 'react-router-dom';
 
 const Hodnavbar = () => {
     const [activeLink, setActiveLink] = useState('');
     const location = useLocation();
 
     useEffect(() => {
+        // Set the active link based on the current pathname
         setActiveLink(location.pathname);
     }, [location.pathname]);
-
-    useEffect(() => {
-        
-        setActiveLink(location.pathname || '/Hod');
-    }, []);
 
     return (
         <div className='container-fluid p-0 m-0' style={{ width: '100%' }}>
@@ -33,22 +29,22 @@ const Hodnavbar = () => {
 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
                             <li className="nav-item">
-                                <Link to='/Hod' className={`nav-link ${activeLink === '/Hod' ? 'active' : ''}`} onClick={() => setActiveLink('/Hod')}>Home</Link>
+                                <NavLink to='/Hod/Home' className='nav-link'>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to='/Hod/Student' className={`nav-link ${activeLink.startsWith('/Hod/Student') ? 'active' : ''}`} onClick={() => setActiveLink('/Hod/Student')}>Student</Link>
+                                <NavLink to='/Hod/Student' className='nav-link'>Student</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Hod/Teacher" className={`nav-link ${activeLink.startsWith('/Hod/Teacher') ? 'active' : ''}`} onClick={() => setActiveLink('/Hod/Teacher')}>Teachers</Link>
+                                <NavLink to="/Hod/Teacher" className='nav-link'>Teachers</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to='/skkf' className={`nav-link ${activeLink === '/skkf' ? 'active' : ''}`} onClick={() => setActiveLink('/skkf')}>Batches & Courses</Link>
+                                <NavLink to='/skkf' className='nav-link'>Batches & Courses</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to='/skkf' className={`nav-link ${activeLink === '/skkf' ? 'active' : ''}`} onClick={() => setActiveLink('/skkf')}>Assignment</Link>
+                                <NavLink to='/skkf' className='nav-link'>Assignment</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to='/Hod/Profile' className={`nav-link ${activeLink === '/Hod/Profile' ? 'active' : ''}`} onClick={() => setActiveLink('/Hod/Profile')}>My Profile</Link>
+                                <NavLink to='/Hod/Profile' className='nav-link'>My Profile</NavLink>
                             </li>
                         </ul>
                     </div>
