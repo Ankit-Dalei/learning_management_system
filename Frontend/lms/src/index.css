@@ -13,22 +13,26 @@ code {
 }
 
 
-.nav-link {
-  color: #ffffff; /* Default color for links */
-  padding: 5px 10px; /* Adjust padding as needed */
-  text-decoration: none; /* Remove underline from links */
+.hodprofile{
+  
+  background: #cc2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 .active{
   border: 1px solid white; /* Border for active link */
   border-radius: 3px;
 }
 
-.nav-link.active {
-  border: 1px solid white; /* Border for active link */
-  border-radius: 3px; /* Rounded corners for active link */
-}
+
 @media (min-width: 992px) {
   .border-lg-none {
     border: none !important;
+  }
+}
+@media screen and (min-width : 992px) {
+  .hodlayout{
+    height: 100%;
   }
 }

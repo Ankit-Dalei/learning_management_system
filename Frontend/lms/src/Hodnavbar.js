@@ -2,16 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation,NavLink } from 'react-router-dom';
 
 const Hodnavbar = () => {
-    const [activeLink, setActiveLink] = useState('');
-    const location = useLocation();
-
-    useEffect(() => {
-        // Set the active link based on the current pathname
-        setActiveLink(location.pathname);
-    }, [location.pathname]);
+    
 
     return (
-        <div className='container-fluid p-0 m-0' style={{ width: '100%' }}>
+        <div className='container-fluid p-0 m-0' style={{ width: '100%',height:'100%' }}>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-start">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +39,9 @@ const Hodnavbar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink to='/Hod/Profile' className='nav-link'>My Profile</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to='/' className='nav-link'>Logout</NavLink>
                             </li>
                         </ul>
                     </div>
