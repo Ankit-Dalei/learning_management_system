@@ -1,6 +1,5 @@
 import React from 'react'
-import HodTeacherDetails from './HodTeacherDetails'
-
+import { Outlet } from 'react-router-dom'
 const HodTeacherbody = () => {
   return (
     <>
@@ -15,7 +14,7 @@ const HodTeacherbody = () => {
       </div>
       
     </div>
-    <HodTeacherDetails/>
+    <Outlet/>
     </>
   )
 }

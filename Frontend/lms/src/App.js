@@ -43,6 +43,8 @@ import Hodbody from "./Hodbody";
 import HodTeacherbody from "./HodTeacher/HodTeacherbody";
 import Hodstudentbody from "./HodStudent/Hodstudentbody";
 import HodProfile from "./HodProfile/HodProfile";
+import HodTeacherInfo from "./HodTeacher/HodTeacherInfo";
+import HodTeacherDetails from "./HodTeacher/HodTeacherDetails";
 
 function App() {
   const getMode = () => {
@@ -98,7 +100,10 @@ function App() {
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
      <Route path="/Hod" element={<Hod/>}>
       <Route index element={<Hodbody/>}/>
-      <Route path="Teacher" element={<HodTeacherbody/>}/>
+      <Route path="Teacher" element={<HodTeacherbody/>}>
+        <Route index element={<HodTeacherDetails/>}/>
+        <Route path="TeacherDetails" element={<HodTeacherInfo/>}/>
+      </Route>
       <Route path="Student" element={<Hodstudentbody/>}/>
       <Route path="Profile" element={<HodProfile/>}/>
      </Route>
