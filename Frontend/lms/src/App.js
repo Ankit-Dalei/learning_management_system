@@ -25,8 +25,6 @@ import Navbar from "./State/Navbar";
 import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
-import StudentDash from "./Student/StudentDash";
-import HeadNavStudent from "./Student/HeadNavStudent";
 import Hod from "./Hod";
 
 import Out from "./Out";
@@ -47,6 +45,15 @@ import HodStudentDetails from "./HodStudent/HodStudentDetails";
 import HodStudentInfo from "./HodStudent/HodStudentInfo";
 import HodOutlet from "./HodOutlet";
 
+
+import HeadNavStudent from "./Student/HeadNavStudent";
+import StudentCard from "./Student/StudentCard";
+import Classroom from "./Student/Classroom";
+import Assignment from "./Student/Assignment";
+import Test from "./Student/Test";
+import Group from "./Student/Group";
+import Compiler from "./Student/Compiler";
+
 function App() {
   const getMode = () => {
     return JSON.parse(localStorage.getItem("mode"));
@@ -64,8 +71,14 @@ function App() {
             <Route index element={<Login/>}/>
             <Route path="/forgotpass" element={<Signup />}></Route>
 
-          <Route path="/stdash" element={<HeadNavStudent />}></Route>
-          {/* <Route path="/" element={<StudentDash />}></Route> */}
+            <Route path="/stdash" element={<HeadNavStudent />}>
+              <Route index element={<StudentCard />} />
+              <Route path="Classroom" element={<Classroom />}></Route>
+              <Route path="Assignment" element={<Assignment />}></Route>
+              <Route path="Test" element={<Test />}></Route>
+              <Route path="Group" element={<Group />}></Route>
+              <Route path="Compiler" element={<Compiler />}></Route>
+            </Route>
           
           <Route path="/management" element={<Header dark={dark} setMode={setMode} />}>
             <Route index element={<House />} />

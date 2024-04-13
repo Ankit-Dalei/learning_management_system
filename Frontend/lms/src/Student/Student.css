@@ -24,20 +24,106 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
     font-size: 2rem;
+    cursor: no-drop;
 }
 .hnsh_extra{
-    background-color: wheat;
+    /* background-color: wheat; */
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+.hnshe_profile{
+    color: aliceblue;
+    height: 35px;
+    width: auto;
+    border: 1px solid rgb(224, 211, 211);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.hnshe_logout{
+    /* background-color: yellowgreen; */
+    padding: 2px;
+}
+.hnshe_logout button{
+    background-color: #a82121;
+    height: 35px;
+    width: 120px;
+    color: black;
+    font-size: 1.2rem;
+    /* padding: 5px; */
+    border-radius: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+/*  */
 .hns_body_container{
     background-color: #fff;
     height: 78vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.stcard_nav{
+    /* background-color: #977a7a; */
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.stcard_nav_card{
+    /* background-color: yellowgreen; */
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 240px; */
+}
+.snc_top{
+    /* background-color: #a82121; */
+    width: 100%;
+    height: 80%;
+}
+.snc_bottom{
+    background-color: gray;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(251, 250, 250);
+    font-weight: 600;
+    cursor: pointer;
+}
+.snc_bottom:hover{
+    color: rgb(251, 220, 220);
+}
+
+
+
+/*  */
 .hns_footer{
     background-color: rgb(56, 64, 87);
     height: 9vh;
@@ -49,11 +135,12 @@
 .hns_f_con{
     /* background-color: rgb(38, 43, 56); */
     height: 7vh;
-    width: 90%;
+    /* width: 90%; */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
     letter-spacing: 4px;
+    cursor: no-drop;
 }
