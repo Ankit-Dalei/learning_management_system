@@ -22,19 +22,25 @@ const Signup = () => {
                 </div>
               </div> */}
               <div className="inp_lb_1">
-                <div className="il1_l">p</div>
+                <div className="il1_l">
+                <i class="fa-solid fa-envelope"></i>
+                </div>
                 <div className="il1_r">
                   <input type="text" placeholder="Email"/>
                 </div>
               </div>
               <div className="inp_lb_1">
-                <div className="il1_l">p</div>
+                <div className="il1_l">
+                <i class="fa-solid fa-lock"></i>
+                </div>
                 <div className="il1_r">
                   <input type="text" placeholder="Password"/>
                 </div>
               </div>
               <div className="inp_lb_1">
-                <div className="il1_l">p</div>
+                <div className="il1_l">
+                <i class="fa-solid fa-lock"></i>
+                </div>
                 <div className="il1_r">
                   <input type="text" placeholder="Re-Password"/>
                 </div>

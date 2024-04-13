@@ -17,14 +17,16 @@ const Login = () => {
               <div className="lclri_body">
                 <div className="inp_lb_1">
                   <div className="il1_l">
-                    u
+                  <i class="fa-solid fa-user"></i>
                   </div>
                   <div className="il1_r">
                     <input type="text" placeholder="UserName"/>
                   </div>
                 </div>
                 <div className="inp_lb_1">
-                  <div className="il1_l">p</div>
+                  <div className="il1_l">
+                  <i class="fa-solid fa-lock"></i>
+                  </div>
                   <div className="il1_r">
                     <input type="text" placeholder="Password"/>
                   </div>

@@ -45,19 +45,19 @@ function Cart() {
     const change = (e) => {
         if (e === '/demo')
             console.log(e)
-        navigate('/brancee')
+        navigate('brancee')
         if (e === '/brancee')
-            navigate('/brancee')
+            navigate('brancee')
         if (e === '/school')
-            navigate('/school')
+            navigate('school')
         if (e === '/course')
-            navigate('/course')
+            navigate('course')
         if (e === '/teacher')
-            navigate('/teacher')
+            navigate('teacher')
         if (e === '/student')
-            navigate('/student')
+            navigate('student')
             if (e === '/campus')
-            navigate('/campus')
+            navigate('campus')
     }
 
     return (
