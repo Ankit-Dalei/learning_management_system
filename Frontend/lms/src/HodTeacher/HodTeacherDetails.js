@@ -41,9 +41,9 @@ const HodTeacherDetails = () => {
   ];
 
   return (
-    <div className='row row-cols-md-2 row-cols-1 bg-dark d-flex justify-content-evenly p-4 ' style={{ height: '100vh', width: '100%' }}>
+    <div className='row row-cols-md-2 row-cols-1 bg-dark d-flex justify-content-evenly  p-1 m-1 container-fluid' style={{ height: '100vh', width: '100%' }}>
       {teacherdetails.map((detail, index) => (
-        <div key={index} className='col'>
+        <div key={index} className='col container-fluid p-0 m-0 '>
           <HodTeacherMap img={detail.img} name={detail.name} email={detail.email} phone={detail.phone} address={detail.address} />
         </div>
       ))}
