@@ -36,13 +36,13 @@ import ViewTest from "./Teacher/ViewTest";
 
 
 import Hodbody from "./Hod/Hodbody";
-import HodTeacherbody from "./HodTeacher/HodTeacherbody";
-import Hodstudentbody from "./HodStudent/Hodstudentbody";
-import HodProfile from "./HodProfile/HodProfile";
-import HodTeacherInfo from "./HodTeacher/HodTeacherInfo";
-import HodTeacherDetails from "./HodTeacher/HodTeacherDetails";
-import HodStudentDetails from "./HodStudent/HodStudentDetails";
-import HodStudentInfo from "./HodStudent/HodStudentInfo";
+import HodTeacherbody from "./Hod/HodTeacher/HodTeacherbody";
+import Hodstudentbody from "./Hod/HodStudent/Hodstudentbody";
+import HodProfile from "./Hod/HodProfile/HodProfile";
+import HodTeacherInfo from "./Hod/HodTeacher/HodTeacherInfo";
+import HodTeacherDetails from "./Hod/HodTeacher/HodTeacherDetails";
+import HodStudentDetails from "./Hod/HodStudent/HodStudentDetails";
+import HodStudentInfo from "./Hod/HodStudent/HodStudentInfo";
 import HodOutlet from "./Hod/HodOutlet";
 
 
