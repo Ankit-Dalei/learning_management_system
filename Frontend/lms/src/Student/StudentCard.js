@@ -27,17 +27,17 @@ const StudentCard = () => {
         }
     })
     const obj={
-        classroom:{photo:"",name:"Classroom",link:"Classroom"},
-        Assignment:{photo:"",name:"Assignment",link:"Assignment"},
-        Test:{photo:"",name:"Test",link:"Test"},
-        Project:{photo:"",name:"Group Project",link:"Group"},
-        Code:{photo:"",name:"Code Editor",link:"Compiler"}
+        classroom:{photo:"/stimg/class.png",name:"Classroom",link:"Classroom"},
+        Assignment:{photo:"/stimg/assignment.png",name:"Assignment",link:"Assignment"},
+        Test:{photo:"/stimg/test.png",name:"Test",link:"Test"},
+        Project:{photo:"/stimg/group.png",name:"Group Project",link:"Group"},
+        Code:{photo:"/stimg/compiler.png",name:"Code Editor",link:"Compiler"}
     }
     const stncard = Object.entries(obj).map(([lis,i])=>{
         return (
           <>
               <div className="stcard_nav_card">
-                  <div className="snc_top">{i.photo}</div>
+                  <div className="snc_top"><img src={i.photo} alt={i.name}/></div>
                   <div className="snc_bottom" onClick={handelnavi} name={i.link}>{i.name}</div>
               </div>
           </>
