@@ -1,6 +1,5 @@
-.tmains{
+/* .tmains{
     font-family: Arial, sans-serif;
-    /* max-width: 600px; */
     margin: 0 auto;
     background-color:#282E38;
     padding: 40px 20px;
@@ -21,7 +20,7 @@
     background-color: #fff;
     padding: 20px;
     margin: 10px;
-    width: calc(33.33% - 20px); /* Adjust according to your layout */
+    width: calc(33.33% - 20px);
     box-sizing: border-box;
   }
   
@@ -51,4 +50,4 @@
     .ttest-card {
       width: calc(100% - 20px);
     }
-  }
+  } */

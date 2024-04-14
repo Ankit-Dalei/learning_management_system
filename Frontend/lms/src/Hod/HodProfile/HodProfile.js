@@ -48,7 +48,7 @@ const HodProfile = () => {
         </div>
         <div className='row   d-flex justify-content-center  py-4 my-4' style={{marginBottom:'20px'}}>
             
-            <button className='col-lg-2 col-7 px-1 btn  btn-warning ml-2 mb-4'>Update</button>
+            <button className='col-lg-2 col-10 px-1 btn  btn-warning ml-2 mb-4'>Update</button>
           </div>
       </div>
     </div>
