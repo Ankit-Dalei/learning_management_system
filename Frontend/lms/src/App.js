@@ -25,7 +25,7 @@ import Navbar from "./State/Navbar";
 import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
-import Hod from "./Hod";
+import Hod from "./Hod/Hod";
 
 import Out from "./Out";
 import TopNavbar from "./Teacher/TopNavbar";
@@ -35,7 +35,7 @@ import EditTest from "./Teacher/EditTest";
 import ViewTest from "./Teacher/ViewTest";
 
 
-import Hodbody from "./Hodbody";
+import Hodbody from "./Hod/Hodbody";
 import HodTeacherbody from "./HodTeacher/HodTeacherbody";
 import Hodstudentbody from "./HodStudent/Hodstudentbody";
 import HodProfile from "./HodProfile/HodProfile";
@@ -43,7 +43,7 @@ import HodTeacherInfo from "./HodTeacher/HodTeacherInfo";
 import HodTeacherDetails from "./HodTeacher/HodTeacherDetails";
 import HodStudentDetails from "./HodStudent/HodStudentDetails";
 import HodStudentInfo from "./HodStudent/HodStudentInfo";
-import HodOutlet from "./HodOutlet";
+import HodOutlet from "./Hod/HodOutlet";
 
 
 import HeadNavStudent from "./Student/HeadNavStudent";
