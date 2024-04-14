@@ -9,6 +9,9 @@ body {
   background-color: #282e38;
   height: 100%;
 }
+/* body::-webkit-scrollbar{
+  display: none;
+} */
 .container {
   max-width: 85%;
   margin: auto;

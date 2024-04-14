@@ -53,6 +53,11 @@ import Assignment from "./Student/Assignment";
 import Test from "./Student/Test";
 import Group from "./Student/Group";
 import Compiler from "./Student/Compiler";
+import Mcq from "./Student/test/Mcq";
+import Coding from "./Student/test/Coding";
+import Testp from "./Student/test/Testp";
+import Upt from "./Student/test/Upt";
+
 
 function App() {
   const getMode = () => {
@@ -75,7 +80,12 @@ function App() {
               <Route index element={<StudentCard />} />
               <Route path="Classroom" element={<Classroom />}></Route>
               <Route path="Assignment" element={<Assignment />}></Route>
-              <Route path="Test" element={<Test />}></Route>
+              <Route path="Test" element={<Test />}>
+                  <Route index element={<Mcq />} />
+                  <Route path="Coding" element={<Coding />}></Route>
+                  <Route path="PassedTest" element={<Testp />}></Route>
+                  <Route path="UpcomingTest" element={<Upt />}></Route>
+              </Route>
               <Route path="Group" element={<Group />}></Route>
               <Route path="Compiler" element={<Compiler />}></Route>
             </Route>
