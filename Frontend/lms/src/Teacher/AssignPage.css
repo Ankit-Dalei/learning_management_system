@@ -1,0 +1,137 @@
+/* AssignPage.css */
+.tmains{
+    font-family: Arial, sans-serif;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    background-color:#282E38;
+    padding: 40px 20px;
+  }
+.test-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #0056b3;
+    border-radius: 8px;
+    margin:1%;
+  }
+  
+  .card {
+    background-color: #9ecdff;
+    color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  .card .question-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card .correct-answer {
+    color: #28a745;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #F8F6E3;
+    /* background-color: #a9d0fb; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin:1%;
+  }
+  
+  .test-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .assign-section {
+    margin-bottom: 10px;
+  }
+  
+  .select-input {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .assign-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #11ab2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:2%;
+  }
+  
+  .assign-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .assign-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+    
+  }
+  
+  .data-table th {
+    background-color: #7AA2E3;
+   
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #6AD4DD;
+  }
+  .data-table tbody tr:nth-child(odd) {
+    background-color: #97E7E1;
+  }
+  
+
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* .test-page {
+      flex-direction: column;
+    } */
+  
+    .left-panel,
+    .right-panel {
+      flex: auto;
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: smaller;
+    }
+  }

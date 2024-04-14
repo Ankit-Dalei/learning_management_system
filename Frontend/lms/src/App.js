@@ -33,7 +33,8 @@ import TestForm from "./Teacher/TestForm";
 import QuestionForm from "./Teacher/QuestionForm";
 import EditTest from "./Teacher/EditTest";
 import ViewTest from "./Teacher/ViewTest";
-
+import AssignTest from "./Teacher/AssignTest";
+import AssignPage from "./Teacher/AssignPage";
 
 import Hodbody from "./Hod/Hodbody";
 import HodTeacherbody from "./Hod/HodTeacher/HodTeacherbody";
@@ -119,6 +120,8 @@ function App() {
             <Route path="questionform" element={<QuestionForm />} />
             <Route path="edittest" element={<EditTest />} />
             <Route path="viewtest" element={<ViewTest />} />
+            <Route path="assigntest" element={<AssignTest />} />
+            <Route path="/TeacherDashBoard/assignpage" element={<AssignPage />} />
           </Route>
           <Route path="/admin" element={<State />} />
           <Route path='/management_Assign' element={<Form/>}/>

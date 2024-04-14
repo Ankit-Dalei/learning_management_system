@@ -14,6 +14,7 @@ const TestForm = () => {
   };
 
   return (
+    <div className="tmains">
     <div className="test-form-container">
       <h2>Create Test</h2>
       <form onSubmit={handleSubmit}>
@@ -33,8 +34,9 @@ const TestForm = () => {
           </div>
         </div>
         
-        <button type="submit">Add Test</button>
+        
       </form>
+    </div>
     </div>
   );
 };

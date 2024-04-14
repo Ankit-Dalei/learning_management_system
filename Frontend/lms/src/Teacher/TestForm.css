@@ -1,8 +1,17 @@
 
+.tmains{
+  font-family: Arial, sans-serif;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  background-color:#282E38;
+  padding: 40px 20px;
+}
+
 .test-form-container {
   font-family: Arial, sans-serif;
   max-width: 600px;
   margin: 0 auto;
+  background-color:#282E38;
   padding: 40px 20px;
 }
 

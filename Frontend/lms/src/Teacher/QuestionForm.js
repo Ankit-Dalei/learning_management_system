@@ -34,6 +34,7 @@ const QuestionForm = ({ onSave }) => {
   };
 
   return (
+    <div className="tmains">
     <div className="question-form">
       <h2>Test Name:</h2>
       <input 
@@ -93,6 +94,7 @@ const QuestionForm = ({ onSave }) => {
         <button onClick={handleSaveQuestion}>Add Question</button>
       </div>
       <button onClick={handleSave}>Save Questions</button>
+    </div>
     </div>
   );
 };

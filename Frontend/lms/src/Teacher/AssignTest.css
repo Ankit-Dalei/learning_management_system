@@ -1,0 +1,54 @@
+.tmains{
+    font-family: Arial, sans-serif;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    background-color:#282E38;
+    padding: 40px 20px;
+  }
+
+.test-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .ttest-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Adjust according to your layout */
+    box-sizing: border-box;
+  }
+  
+  .ttest-card h2 {
+    margin-top: 0;
+  }
+  
+  .ttest-card p {
+    margin-bottom: 10px;
+  }
+  
+  .ttest-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ttest-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .ttest-card {
+      width: calc(100% - 20px);
+    }
+  }

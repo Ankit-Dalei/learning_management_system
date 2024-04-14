@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
+    <div className="tmains">
     <div className="dashboard-container">
       <h1>Welcome, Teacher!</h1>
       <div className="dashboard-content">
@@ -33,6 +34,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
