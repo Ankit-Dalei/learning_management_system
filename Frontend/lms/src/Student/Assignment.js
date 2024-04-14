@@ -19,7 +19,7 @@ const Assignment = () => {
                   <div className="snc_top">{i.photo}</div>
                   <div className="snc_bottom" name={i.link}>{i.name}</div>
               </div> */}
-              <StudentUniversalCard name={i.name} enter={"Enter"} p={i.p}/>
+              <StudentUniversalCard name={i.name} enter={"Solve"} p={i.p}/>
           </>
         );
     });
