@@ -25,7 +25,7 @@ import Navbar from "./State/Navbar";
 import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
-import Hod from "./Hod/Hod";
+
 
 import Out from "./Out";
 import TopNavbar from "./Teacher/TopNavbar";
@@ -57,6 +57,7 @@ import Mcq from "./Student/test/Mcq";
 import Coding from "./Student/test/Coding";
 import Testp from "./Student/test/Testp";
 import Upt from "./Student/test/Upt";
+import Hodlayout from "./Hod/Hodlayout";
 
 
 function App() {
@@ -122,7 +123,7 @@ function App() {
           <Route path="/admin" element={<State />} />
           <Route path='/management_Assign' element={<Form/>}/>
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
-     <Route path="/Hod" element={<Hod/>}>
+     <Route path="/Hod" element={<Hodlayout/>}>
       <Route index element={<HodOutlet/>}/>
       <Route path="Home" element={<Hodbody/>}/>
       <Route path="Teacher" element={<HodTeacherbody/>}>

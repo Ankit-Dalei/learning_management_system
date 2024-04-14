@@ -10,8 +10,8 @@ const HodTeacherMap = (props) => {
   data.push(props.phone);
   data.push(props.address);
   return (
-    <div className='row border rounded-4 border-light m-2 text-light p-4' style={{ width: '100%', maxWidth: '32rem' }}>
-      <div className='col-12 col-md-5 mb-3 mb-md-0 d-flex align-items-center justify-content-center'>
+    <div className='row border rounded-4 border-light  container-fluid p-2 m-0 my-4 text-light ' style={{ width: '100%', maxWidth: '32rem' }}>
+      <div className='col-12 col-md-5 mb-3 py-4 mb-md-0 d-flex align-items-center justify-content-center'>
         <img src={props.img} alt="" className='img-fluid img-thumbnail rounded-4' style={{ width: '10rem', height: '10rem', objectFit: 'cover' }} />
       </div>
       <div className='col-12 col-md-7 d-flex flex-column justify-content-center'>

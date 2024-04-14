@@ -34,7 +34,7 @@ const Hodgraphandstats = () => {
 
 
             <div className='d-flex flex-column my-2 '>
-                <div className=' row border border-lg-none border-primary  container-fluid rounded mx-3 my-4 my-lg-3 p-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
+                <div className=' row border border-lg-none border-primary  container-fluid rounded  my-4 my-lg-3' style={{ maxHeight: '25rem', minHeight: '22rem',width:'100%' }}>
 
                     <div className='col-lg-8 d-flex justify-content-center h-md-50px' style={{minWidth:'80px',maxWidth:'100%',minHeight:'90%'}}>
                         <ResponsiveContainer className='rounded ' >

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom'
 import Hodnavbar from './Hodnavbar'
-const Hodlayout = (props) => {
+const Hodlayout = () => {
   return (
     <>
       <div id="hod" className='overflow-hidden m-0 p-0 container-fluid ' >

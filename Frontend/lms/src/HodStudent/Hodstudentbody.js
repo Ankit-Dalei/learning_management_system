@@ -5,8 +5,8 @@ import { Outlet } from 'react-router-dom'
 const Hodstudentbody = () => {
   return (
     <>
-    <div className='container-fluid d-flex justify-content-center text-light'>
-      <div className='row d-flex flex-row justify-content-center'>
+    <div className='container-fluid d-flex justify-content-center text-light sticky-top'>
+      <div className='row d-flex flex-row justify-content-center '>
         <div className='col-8 container-fluid m-0 p-0 me-2'>
           <input type="search" className='form-control container-fluid' />
         </div>
@@ -16,7 +16,9 @@ const Hodstudentbody = () => {
       </div>
       
     </div>
+    <div className='container-fluid p-0 m-0'>
     <Outlet/>
+    </div>
     </>
   )
 }
