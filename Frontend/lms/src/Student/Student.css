@@ -188,7 +188,7 @@
 .ASSign_stcard_nav{
     /* background-color: #977a7a; */
     height: auto;
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
