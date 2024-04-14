@@ -1,7 +1,6 @@
-/* AssignPage.css */
+/* AssignPage.css
 .tmains{
     font-family: Arial, sans-serif;
-    /* max-width: 600px; */
     margin: 0 auto;
     background-color:#282E38;
     padding: 40px 20px;
@@ -53,7 +52,6 @@
     flex: 1;
     padding: 20px;
     background-color: #F8F6E3;
-    /* background-color: #a9d0fb; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin:1%;
@@ -121,11 +119,8 @@
   }
   
 
-  /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    /* .test-page {
-      flex-direction: column;
-    } */
+
   
     .left-panel,
     .right-panel {
@@ -134,4 +129,4 @@
       margin-bottom: 20px;
       font-size: smaller;
     }
-  }
+  } */
