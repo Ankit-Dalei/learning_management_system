@@ -1,8 +1,8 @@
 import React from "react";
-import "./card.css";
+// import "./card.css";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import footer from "./footer";
+// import footer from "./footer";
 const State = () => {
   return (
     <div className="container-fluid p-0 m-0 overflow-auto bg-primary" style={{height:'100vh',width:'100%'}}>
