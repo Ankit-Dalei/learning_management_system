@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Login/Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from './Service/AuthService';
 
 const Login = () => {
+  const navigate=useNavigate();
   const [userlog, setUserLog] = useState({
     Username: '',
     Password: ''
@@ -41,6 +42,7 @@ const Login = () => {
   return (
     <>
       <div className="login_contaier">
+        
         <div className="lc_inner">
           <div className="lcl_left"></div>
           <div className="lcl_right">
@@ -79,6 +81,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+     
     </>
   );
 };

@@ -39,9 +39,9 @@ const HodStudentDetails = () => {
 
     return (
         <div>
-        <div className='p-lg-4 p-0 text-white bg-dark d-lg-block d-none' style={{ height: '100vh' }}>
+        <div className='p-lg-4 p-0 text-white  d-lg-block d-none' style={{ height: '100vh' }}>
            
-                <table className="table align-middle mb-0 bg-dark text-white" >
+                <table className="table align-middle mb-0  text-white" >
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -58,8 +58,9 @@ const HodStudentDetails = () => {
                     </tbody>
                 </table>
             </div>
-            <div className='d-block d-lg-none'>
+            <div className='d-block d-lg-none  d-flex flex-column flex-lg-row justify-content-center'>
             {studentdetails.map((detail, index) => (
+                
                             <HodStudentPhone key={index} batch={detail.batch} section={detail.section} name={detail.name} img={detail.img} email={detail.email} phone={detail.phone} address={detail.address} />
                         ))}
             </div>
