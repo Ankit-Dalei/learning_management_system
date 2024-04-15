@@ -59,6 +59,9 @@ import Coding from "./Student/test/Coding";
 import Testp from "./Student/test/Testp";
 import Upt from "./Student/test/Upt";
 import Hodlayout from "./Hod/Hodlayout";
+import HodBatchbody from "./Hod/HodBatchandCourses/HodBatchbody";
+import HodBatchDetails from "./Hod/HodBatchandCourses/HodBatchDetails";
+import HodCourseDetails from "./Hod/HodBatchandCourses/HodCourseDetails";
 
 
 function App() {
@@ -127,8 +130,8 @@ function App() {
           <Route path='/management_Assign' element={<Form/>}/>
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
      <Route path="/Hod" element={<Hodlayout/>}>
-      <Route index element={<HodOutlet/>}/>
-      <Route path="Home" element={<Hodbody/>}/>
+      <Route index element={<Hodbody/>}/>
+      
       <Route path="Teacher" element={<HodTeacherbody/>}>
         <Route index element={<HodTeacherDetails/>}/>
         <Route path="TeacherDetails" element={<HodTeacherInfo/>}/>
@@ -136,6 +139,10 @@ function App() {
       <Route path="Student" element={<Hodstudentbody/>}>
         <Route index element={<HodStudentDetails/>}/>
         <Route path="StudentDetails" element={<HodStudentInfo/>}/>
+      </Route>
+      <Route path="Batch" element={<HodBatchbody/>}>
+        <Route index element={<HodBatchDetails/>}/>
+        <Route path="Courses" element={<HodCourseDetails/>}/>
       </Route>
       <Route path="Profile" element={<HodProfile/>}/>
      </Route>

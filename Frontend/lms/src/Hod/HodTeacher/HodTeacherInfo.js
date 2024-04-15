@@ -1,8 +1,9 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const HodTeacherInfo = () => {
+    const navigate=useNavigate();
     const location = useLocation();
     const data = location.state?.data || 'No data Received';
     const [name, img, email, phone, address] = data;
@@ -26,6 +27,9 @@ const HodTeacherInfo = () => {
 
     return (
         <div className='container-fluid m-0 p-0' style={{ height: '100%', width: '100%' }}>
+            <button className='btn ps-lg-4' onClick={() => navigate('/Hod/Teacher')}>
+                <i className="fa-solid fa-arrow-left mb-3" style={{ color: 'red' }}></i>
+            </button>
             <div className='container-fluid text-white d-flex p-0 m-0 mt-4 pt-4 flex-lg-row  flex-column row d-flex align-items-center' style={{ height: '100%', width: '100%' }}>
                 <div className='col-lg-4 d-flex align-items-center justify-content-center border-right border-light'>
                     <img

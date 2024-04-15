@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation,NavLink } from 'react-router-dom';
 
 const Hodnavbar = () => {
+    const location = useLocation();
     const [collapsed, setCollapsed] = useState(true); 
 
     const closeNav = () => {
@@ -27,7 +28,9 @@ const Hodnavbar = () => {
 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-column"  onClick={closeNav}>
                             <li className="nav-item">
-                                <NavLink to='/Hod/Home' className='nav-link'>Home</NavLink>
+                                <Link to='/Hod' className={`nav-link  ${
+            location.pathname === '/Hod' ? 'active-link' : ''
+          }`}>Home</Link>
                             </li>
                             <li className="nav-item">
                                 <NavLink to='/Hod/Student' className='nav-link'>Student</NavLink>
@@ -36,7 +39,7 @@ const Hodnavbar = () => {
                                 <NavLink to="/Hod/Teacher" className='nav-link'>Teachers</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/skkf' className='nav-link'>Batches & Courses</NavLink>
+                                <NavLink to='/Hod/Batch' className='nav-link'>Batches & Courses</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to='/skkf' className='nav-link'>Assignment</NavLink>
@@ -44,7 +47,7 @@ const Hodnavbar = () => {
                             <li className="nav-item">
                                 <NavLink to='/Hod/Profile' className='nav-link'>My Profile</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item ">
                                 <NavLink to='/' className='nav-link'>Logout</NavLink>
                             </li>
                         </ul>

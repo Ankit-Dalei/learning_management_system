@@ -24,6 +24,18 @@ code {
   border: 1px solid white; /* Border for active link */
   border-radius: 3px;
 }
+.active-link{
+  border: 5px solid rgb(0, 255, 64); /* Border for active link */
+  border-radius: 3px;
+  color: white;
+  
+}
+.navbar .navbar-nav .nav-item .nav-link.active-link {
+  border: 1px solid white; /* Border for active link */
+  border-radius: 3px;
+  color: white !important; /* Override Bootstrap's default color */
+}
+
 
 
 @media (min-width: 992px) {
