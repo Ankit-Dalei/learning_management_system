@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login/Login.css';
 import { Link } from 'react-router-dom';
-// import { login } from './AuthService';
+import { login } from './Service/AuthService';
 
 const Login = () => {
   const [userlog, setUserLog] = useState({
@@ -28,15 +28,13 @@ const Login = () => {
       return;
     }
 
-    // const response = await login(Username, Password);
+    const response = await login(Username, Password);
 
-    // if (response.success) {
-    //   console.log('Login successful');
-    // } else {
-    //   console.log('Login failed:', response.error);
-    // }
-
-    // Reset the form
+    if (response.success) {
+      console.log('Login successful');
+    } else {
+      console.log('Login failed:', response.error);
+    }
     setUserLog({ Username: '', Password: '' });
   };
 
