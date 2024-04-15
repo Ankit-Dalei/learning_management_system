@@ -62,6 +62,7 @@ import Hodlayout from "./Hod/Hodlayout";
 import HodBatchbody from "./Hod/HodBatchandCourses/HodBatchbody";
 import HodBatchDetails from "./Hod/HodBatchandCourses/HodBatchDetails";
 import HodCourseDetails from "./Hod/HodBatchandCourses/HodCourseDetails";
+import HodAssignmentbody from "./Hod/HodAssignment/HodAssignmentbody";
 
 
 function App() {
@@ -145,6 +146,7 @@ function App() {
         <Route index element={<HodBatchDetails/>}/>
         <Route path="Courses" element={<HodCourseDetails/>}/>
       </Route>
+      <Route path="Assignment" element={<HodAssignmentbody/>}/>
       <Route path="Profile" element={<HodProfile/>}/>
      </Route>
           {/* <Route path="/Hod" element={<Hod />} />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const HodCourseDetails = () => {
   return (
-    <div>
+    <div className='text-light'>
       courses
     </div>
   )
