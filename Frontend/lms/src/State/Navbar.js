@@ -1,12 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+
 
 const Navbar = () => {
   return (
     <div className='container-fluid m-0 p-0' >
-      <nav className='container-fluid navbar bg-dark ' >
-        <div className="text-white " >
+      <nav className='container-fluid navbar bg-dark 'style={{height:'80px'}}>
+        <div className="text-white text-uppercase ms-5" >
         
-              <h3>Centurion University</h3>
+              <h3>Centurion University </h3>
 
         </div>
         <div className="nav-item">
@@ -15,6 +17,7 @@ const Navbar = () => {
                 
               </div>
       </nav>
+      <Outlet/>
     </div>
   )
 }

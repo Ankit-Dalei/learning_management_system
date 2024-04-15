@@ -126,8 +126,9 @@ function App() {
             <Route path="assigntest" element={<AssignTest />} />
             <Route path="/TeacherDashBoard/assignpage" element={<AssignPage />} />
           </Route>
-          <Route path="/admin" element={<State />} />
-          <Route path='/management_Assign' element={<Form/>}/>
+          <Route path="/admin" element={<Navbar />} >
+              <Route index element={<State />} />
+          </Route>
      {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
      <Route path="/Hod" element={<Hodlayout/>}>
       <Route index element={<Hodbody/>}/>
