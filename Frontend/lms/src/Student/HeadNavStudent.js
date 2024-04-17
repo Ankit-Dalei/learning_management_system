@@ -19,11 +19,11 @@ const HeadNavStudent = () => {
             <div className="hnsh_name">
                 CENTURION UNIVERSITY
                 <div className="hnsh_home_log">
-                  <Link to={'/stdash'}><i class="fa-solid fa-house"></i></Link>
+                  <Link to={'/stdash'}><i className="fa-solid fa-house"></i></Link>
                 </div>
             </div>
             <div className="hnsh_extra">
-              <div className="hnshe_profile" onClick={handelclick}>210301120073@cutm.ac.in  <i class="fa-solid fa-angle-down"></i></div>
+              <div className="hnshe_profile" onClick={handelclick}>210301120073@cutm.ac.in  <i className="fa-solid fa-angle-down"></i></div>
               <div className="hnshe_logout">
                 <button onClick={handellogclick}>Logout</button>
               </div>

@@ -32,7 +32,22 @@ const Login = () => {
     const response = await login(Username, Password);
 
     if (response.success) {
-      console.log('Login successful');
+      const roles = await response.role.roleName;
+      console.log(roles)
+
+        if (roles === 'Admin') {
+          navigate('/admin');
+        } else if (roles === 'Management') {
+          navigate('/management');
+        } else if (roles === 'Hod') {
+          navigate('/Hod');
+        } else if (roles === 'Teacher') {
+          navigate('/TeacherDashBoard');
+        } else if (roles === 'Student') {
+          navigate('/stdash');
+        } else {
+          navigate('/');
+        }
     } else {
       console.log('Login failed:', response.error);
     }
