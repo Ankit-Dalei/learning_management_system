@@ -6,7 +6,7 @@ const StudentCard = () => {
     const navigate = useNavigate();
 
     const handleNavigation=((c)=>{   
-        const linkName = c.currentTarget.getAttribute('name');
+        const linkName = c;
         // console.log(linkName);
         if (linkName==="Classroom") {
             navigate("Classroom")

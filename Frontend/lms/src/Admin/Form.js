@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Form.css';
 import { Link } from 'react-router-dom';
+import { addmt } from '../Service/AddManagementService';
 
 const Form = () => {
-  const navigate = useNavigate();
   const [data, setData] = useState({
     name: '',
     phone: '',
@@ -23,6 +23,19 @@ const Form = () => {
     const { name, phone, university_name, email, password } = data;
     const formData = { name, phone, university_name, email, password };
     console.log(formData); // You can do something with the form data, like sending it to an API
+    const response = await addmt(name, email, password, university_name, phone);
+    if (response.success) {
+      console.log(response)
+      setData({
+        name: '',
+        phone: '',
+        university_name: '',
+        email: '',
+        password: '',
+      });
+    } else {
+      console.log('Login failed:', response.error);
+    }
   };
 
   return (

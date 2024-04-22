@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const EditForm = () => {
+  const { id } = useParams();
   const [formData, setFormData] = useState({
     password: '',
     phone: '',

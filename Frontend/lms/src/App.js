@@ -136,13 +136,13 @@ function App() {
             </Route>
             <Route path="/admin"  element={<AdminLayout/>}>
 
-<Route index element={<AdminDashBoard/>}/>
-<Route path="Admintable" element={<Admintable/>}/>        
-<Route path="add_management" element={<Form/>}/>        
-<Route path="/admin/edit_form" element={<EditForm/>}/>        
+              <Route index element={<AdminDashBoard/>}/>
+              <Route path="Admintable" element={<Admintable/>}/>        
+              <Route path="add_management" element={<Form/>}/>        
+              <Route path="/admin/edit_form/:id" element={<EditForm/>}/>        
         
 
-</Route>
+            </Route>
             {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
             <Route path="/Hod" element={<Hodlayout />}>
               <Route index element={<Hodbody />} />
