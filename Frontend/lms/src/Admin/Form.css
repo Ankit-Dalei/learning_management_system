@@ -87,3 +87,17 @@
       background: #EAEAEA;
       color: #676767;
   }
+
+  .navbar_email{
+    color: aliceblue;
+    height: 35px;
+    width: auto;
+    border: 2px solid rgb(15, 112, 197);
+    padding: 5px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+  

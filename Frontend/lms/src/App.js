@@ -19,12 +19,16 @@ import AddCSB from "./Management/Add/AddCSB/AddCSB";
 import AddCSBC from "./Management/Add/AddCSBC/AddCSBC";
 import Campus from "./Management/components/Pages/Campus/Campus";
 import Dashboard from "./Teacher/Dashboard";
-import State from "./Admin/State";
+// import State from "./Admin/State";
 import Form from "./Admin/Form";
 import Navbar from "./Admin/Navbar";
+import Admintable from "./Admin/Admintable";
+import AdminDashBoard from "./Admin/AdminDashBoard";
+import AdminLayout from "./Admin/AdminLayout";
 import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
+
 
 
 import Out from "./Out";
@@ -129,9 +133,14 @@ function App() {
               <Route path="assigntest" element={<AssignTest />} />
               <Route path="/TeacherDashBoard/assignpage" element={<AssignPage />} />
             </Route>
-            <Route path="/admin" element={<Navbar />} >
-              <Route index element={<State />} />
-            </Route>
+            <Route path="/admin"  element={<AdminLayout/>}>
+
+        <Route index element={<AdminDashBoard/>}/>
+        <Route path="Admintable" element={<Admintable/>}/>        
+        <Route path="add_management" element={<Form/>}/>        
+                
+
+       </Route>
             {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
             <Route path="/Hod" element={<Hodlayout />}>
               <Route index element={<Hodbody />} />

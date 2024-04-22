@@ -55,3 +55,7 @@ code {
     height: 100%;
   }
 }
+
+.admin-active {
+  color: blue;
+}
