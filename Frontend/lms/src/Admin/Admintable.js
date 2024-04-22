@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Admintable = () => {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([
-    { id: 1, name: 'John Doe', age: 30 },
-    { id: 2, name: 'Jane Smith', age: 25 },
-    { id: 3, name: 'Alice Johnson', age: 35 }
+    { id: 1,email:'123@gmail.com', name: 'John Doe', university_name: 'centurion' },
+    { id: 2,email:'123@gmail.com', name: 'Jane Smith',university_name: 'centurion'  },
+    { id: 3,email:'123@gmail.com', name: 'Alice Johnson',university_name: 'centurion'  }
   ]);
 
   // Filter data based on search term
@@ -38,9 +39,10 @@ const Admintable = () => {
             <thead className="thead-dark">
               <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Actions</th>
+                <th>Email</th>
+                <th>Name</th> 
+                <th>University name</th>
+                <th>Action</th>
                 <th>Action1</th>
               </tr>
             </thead>
@@ -48,10 +50,11 @@ const Admintable = () => {
               {filteredData.map((item, index)=> (
                 <tr key={item.id} style={{ backgroundColor: index % 2 === 0 ? '#A1BE95' : '#D3C5E5' }}>
                   <td>{item.id}</td>
+                  <td>{item.email}</td>
                   <td>{item.name}</td>
-                  <td>{item.age}</td>
+                  <td>{item.university_name}</td>
                   <td>
-                    <button className="btn btn-primary rounded-pill mr-lg-2">Edit</button>
+                    <Link to='/admin/edit_form'><button className="btn btn-primary rounded-pill mr-lg-2">Edit</button></Link>
                   </td>
                   <td>
                     <button

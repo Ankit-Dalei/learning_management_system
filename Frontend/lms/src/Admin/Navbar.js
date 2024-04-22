@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { NavLink,useLocation,useNavigate } from "react-router-dom";
+import { NavLink,useLocation,useNavigate,Link } from "react-router-dom";
 const Navbar = () => {
   const navigate=useNavigate();
     const location = useLocation();
@@ -21,16 +21,19 @@ const Navbar = () => {
                     <div className={`collapse navbar-collapse  ${collapsed ? '' : 'show'}`} id="navbarTogglerDemo01">
                        
 
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-4 px-3" onClick={closeNav}>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-3 px-3" onClick={closeNav}>
+                        <li className='nav-item d-flex justify-content-center align-items-center' style={{ height: '100%', fontSize: '1.5rem',marginRight:'15px' }}>
+                                <Link to='/admin'><i className="fa-solid fa-house"></i></Link>
+                            </li>
                             
                             <li className='nav-item'>
-                                <NavLink to='/admin' className='nav-link' end>Add Management</NavLink>
+                                <Link to='/admin/add_management' className='nav-link' end>Add Management</Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/admin/admintable' className='nav-link'>View management</NavLink>
+                                <Link to='/admin/admintable' className='nav-link'>View management</Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="..." className='nav-link'>Reports</NavLink>
+                                <Link to="..." className='nav-link'>Reports</Link>
                             </li>
                             
                            

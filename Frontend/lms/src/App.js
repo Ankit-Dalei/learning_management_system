@@ -25,6 +25,7 @@ import Navbar from "./Admin/Navbar";
 import Admintable from "./Admin/Admintable";
 import AdminDashBoard from "./Admin/AdminDashBoard";
 import AdminLayout from "./Admin/AdminLayout";
+import EditForm from "./Admin/EditForm";
 import Login from "./Login";
 import Signup from "./Login/Signup";
 import Head from "./Management/components/head/Head";
@@ -135,12 +136,13 @@ function App() {
             </Route>
             <Route path="/admin"  element={<AdminLayout/>}>
 
-        <Route index element={<AdminDashBoard/>}/>
-        <Route path="Admintable" element={<Admintable/>}/>        
-        <Route path="add_management" element={<Form/>}/>        
-                
+<Route index element={<AdminDashBoard/>}/>
+<Route path="Admintable" element={<Admintable/>}/>        
+<Route path="add_management" element={<Form/>}/>        
+<Route path="/admin/edit_form" element={<EditForm/>}/>        
+        
 
-       </Route>
+</Route>
             {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
             <Route path="/Hod" element={<Hodlayout />}>
               <Route index element={<Hodbody />} />
