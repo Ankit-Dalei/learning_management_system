@@ -41,7 +41,7 @@ const Hodnavbar = () => {
                                 <NavLink to='/Hod/Batch' className='nav-link'>Batches & Courses</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/Hod/Assignment' className='nav-link'>Assignment</NavLink>
+                                <NavLink to='/Hod/Assignment' className='nav-link'>Assignment & Quizes</NavLink>
                             </li>
                             <li className="nav-item ">
                                 <NavLink to='/Hod/Profile' className='nav-link text-break'>My Profile</NavLink>
