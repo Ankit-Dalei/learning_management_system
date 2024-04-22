@@ -30,6 +30,13 @@ code {
   
   
 }
+.hod-assignment-active-link{
+  border: 1px solid #e78121; 
+  border-radius: 3px;
+  
+  
+}
+
 .navbar .navbar-nav .nav-item .nav-link.active-link {
   border: 1px solid white; 
   border-radius: 3px;

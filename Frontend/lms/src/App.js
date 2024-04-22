@@ -62,7 +62,9 @@ import Hodlayout from "./Hod/Hodlayout";
 import HodBatchbody from "./Hod/HodBatchandCourses/HodBatchbody";
 import HodBatchDetails from "./Hod/HodBatchandCourses/HodBatchDetails";
 import HodCourseDetails from "./Hod/HodBatchandCourses/HodCourseDetails";
-import HodAssignmentbody from "./Hod/HodAssignment/HodAssignmentbody";
+import HodAssignmentbody from "./Hod/HodAssignmentandQuizes/HodAssignmentbody";
+import HodAssignmentDetails from "./Hod/HodAssignmentandQuizes/HodassignmentDetails";
+import HodQuizesDetails from "./Hod/HodAssignmentandQuizes/HodQuizesDetails";
 
 
 function App() {
@@ -76,10 +78,10 @@ function App() {
   return (
     <div className={dark ? "app" : "light"}>
       <BrowserRouter>
-        
+
         <Routes>
-          <Route path="/" element={<Out/>}>
-            <Route index element={<Login/>}/>
+          <Route path="/" element={<Out />}>
+            <Route index element={<Login />} />
             <Route path="/forgotpass" element={<Signup />}></Route>
 
             <Route path="/stdash" element={<HeadNavStudent />}>
@@ -87,73 +89,72 @@ function App() {
               <Route path="Classroom" element={<Classroom />}></Route>
               <Route path="Assignment" element={<Assignment />}></Route>
               <Route path="Test" element={<Test />}>
-                  <Route index element={<Mcq />} />
-                  <Route path="Coding" element={<Coding />}></Route>
-                  <Route path="PassedTest" element={<Testp />}></Route>
-                  <Route path="UpcomingTest" element={<Upt />}></Route>
+                <Route index element={<Mcq />} />
+                <Route path="Coding" element={<Coding />}></Route>
+                <Route path="PassedTest" element={<Testp />}></Route>
+                <Route path="UpcomingTest" element={<Upt />}></Route>
               </Route>
               <Route path="Group" element={<Group />}></Route>
               <Route path="Compiler" element={<Compiler />}></Route>
             </Route>
-          
-          <Route path="/management" element={<Header dark={dark} setMode={setMode} />}>
-            <Route index element={<House />} />
-            <Route path="brancee" element={<Brancee />}></Route>
-            <Route path="course" element={<Course />}></Route>
-            <Route path="school" element={<School />}></Route>
-            <Route path="teacher" element={<Teacher />}></Route>
-            <Route path="student" element={<Student />}></Route>
-            <Route path="campus" element={<Campus />}></Route>
-          {/* add form */}
-            <Route path="addschool" element={<AddSchool />}></Route>
-            <Route path="addbrance" element={<AddBrance />}></Route>
-            <Route path="addschool" element={<AddSchool />}></Route>
-            <Route path="addteacher" element={<AddTech />}></Route>
-            <Route path="addcampus" element={<AddCampus />}></Route>
-            <Route path="addcourse" element={<AddCourse />}></Route>
-            <Route path="addstudent" element={<AddStudent />}></Route>
-            <Route path="addsection" element={<AddSection />}></Route>
-            <Route path="addcsb" element={<AddCSB />}></Route>
-            <Route path="addcsbc" element={<AddCSBC />}></Route>
-          </Route>
+
+            <Route path="/management" element={<Header dark={dark} setMode={setMode} />}>
+              <Route index element={<House />} />
+              <Route path="brancee" element={<Brancee />}></Route>
+              <Route path="course" element={<Course />}></Route>
+              <Route path="school" element={<School />}></Route>
+              <Route path="teacher" element={<Teacher />}></Route>
+              <Route path="student" element={<Student />}></Route>
+              <Route path="campus" element={<Campus />}></Route>
+              {/* add form */}
+              <Route path="addschool" element={<AddSchool />}></Route>
+              <Route path="addbrance" element={<AddBrance />}></Route>
+              <Route path="addschool" element={<AddSchool />}></Route>
+              <Route path="addteacher" element={<AddTech />}></Route>
+              <Route path="addcampus" element={<AddCampus />}></Route>
+              <Route path="addcourse" element={<AddCourse />}></Route>
+              <Route path="addstudent" element={<AddStudent />}></Route>
+              <Route path="addsection" element={<AddSection />}></Route>
+              <Route path="addcsb" element={<AddCSB />}></Route>
+              <Route path="addcsbc" element={<AddCSBC />}></Route>
+            </Route>
 
 
-          <Route path="/TeacherDashBoard" element={<TopNavbar />}>
-            <Route index element={<Dashboard />} />
-            <Route path="testform" element={<TestForm />}></Route>
-            <Route path="questionform" element={<QuestionForm />} />
-            <Route path="edittest" element={<EditTest />} />
-            <Route path="viewtest" element={<ViewTest />} />
-            <Route path="assigntest" element={<AssignTest />} />
-            <Route path="/TeacherDashBoard/assignpage" element={<AssignPage />} />
-          </Route>
-          <Route path="/admin" element={<Navbar />} >
+            <Route path="/TeacherDashBoard" element={<TopNavbar />}>
+              <Route index element={<Dashboard />} />
+              <Route path="testform" element={<TestForm />}></Route>
+              <Route path="questionform" element={<QuestionForm />} />
+              <Route path="edittest" element={<EditTest />} />
+              <Route path="viewtest" element={<ViewTest />} />
+              <Route path="assigntest" element={<AssignTest />} />
+              <Route path="/TeacherDashBoard/assignpage" element={<AssignPage />} />
+            </Route>
+            <Route path="/admin" element={<Navbar />} >
               <Route index element={<State />} />
-          </Route>
-     {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
-     <Route path="/Hod" element={<Hodlayout/>}>
-      <Route index element={<Hodbody/>}/>
-      
-      <Route path="Teacher" element={<HodTeacherbody/>}>
-        <Route index element={<HodTeacherDetails/>}/>
-        <Route path="TeacherDetails" element={<HodTeacherInfo/>}/>
-      </Route>
-      <Route path="Student" element={<Hodstudentbody/>}>
-        <Route index element={<HodStudentDetails/>}/>
-        <Route path="StudentDetails" element={<HodStudentInfo/>}/>
-      </Route>
-      <Route path="Batch" element={<HodBatchbody/>}>
-        <Route index element={<HodBatchDetails/>}/>
-        <Route path="Courses" element={<HodCourseDetails/>}/>
-      </Route>
-      <Route path="Assignment" element={<HodAssignmentbody/>}/>
-      <Route path="Profile" element={<HodProfile/>}/>
-     </Route>
-          {/* <Route path="/Hod" element={<Hod />} />
-          <Route path="/HodTeacher" element={<HodTeacher />} />
-          <Route path="/Hodstudent" element={<HodStudent />} />
+            </Route>
+            {/*  <Route path='/Navbar' element={<Navbar/>}/> */}
+            <Route path="/Hod" element={<Hodlayout />}>
+              <Route index element={<Hodbody />} />
 
-          <Route path="/HodProfile" element={<HodProfileTemplate />} /> */}
+              <Route path="Teacher" element={<HodTeacherbody />}>
+                <Route index element={<HodTeacherDetails />} />
+                <Route path="TeacherDetails" element={<HodTeacherInfo />} />
+              </Route>
+              <Route path="Student" element={<Hodstudentbody />}>
+                <Route index element={<HodStudentDetails />} />
+                <Route path="StudentDetails" element={<HodStudentInfo />} />
+              </Route>
+              <Route path="Batch" element={<HodBatchbody />}>
+                <Route index element={<HodBatchDetails />} />
+                <Route path="Courses" element={<HodCourseDetails />} />
+              </Route>
+              <Route path="Assignment" element={<HodAssignmentbody />}>
+                <Route index element={<HodAssignmentDetails/>}/>
+                <Route path="Quizes" element={<HodQuizesDetails/>}/>
+              </Route>
+              <Route path="Profile" element={<HodProfile />} />
+            </Route>
+
           </Route>
         </Routes>
       </BrowserRouter>
