@@ -1,22 +1,21 @@
 const login = async (username, password) => {
   try {
-    const response = await fetch('http://localhost:8181/api/login', {
+    const formData = new FormData();
+    formData.append('userid', username);
+    formData.append('password', password);
+
+    const response = await fetch('http://localhost:8181/user/login', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        "usernameOrEmail": username,
-        "password": password
-    }),
+      body: formData,
     });
-    
+
     if (!response.ok) {
       throw new Error('Failed to login');
     }
 
     const data = await response.json();
-    return { success: true, role: data.role };
+    // console.log(data.user.userId)
+    return { success: true,role: data.user.userId};
   } catch (error) {
     console.error('Error logging in:', error);
     return { success: false, error: 'An error occurred while logging in' };

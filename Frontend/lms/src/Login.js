@@ -19,8 +19,8 @@ const Login = () => {
     e.preventDefault();
     const { Username, Password } = userlog;
 
-    if (Password.length < 8) {
-      console.log('Password must be at least 8 characters long');
+    if (Password.length < 5) {
+      console.log('Password must be at least 5 characters long');
       return;
     }
 
@@ -32,18 +32,22 @@ const Login = () => {
     const response = await login(Username, Password);
 
     if (response.success) {
-      const roles = await response.role.roleName;
-      console.log(roles)
+      const roles = await response.role;
+      // console.log(roles)
+      const trimmed = roles.trim();
+      trimmed.toString()
+      const firstTwo = trimmed.substring(0, 2);
+      // console.log(firstTwo)
 
-        if (roles === 'Admin') {
+        if (firstTwo === 'AD') {
           navigate('/admin');
-        } else if (roles === 'Management') {
+        } else if (firstTwo === 'MT') {
           navigate('/management');
-        } else if (roles === 'Hod') {
+        } else if (firstTwo === 'Hod') {
           navigate('/Hod');
-        } else if (roles === 'Teacher') {
+        } else if (firstTwo === 'Teacher') {
           navigate('/TeacherDashBoard');
-        } else if (roles === 'Student') {
+        } else if (firstTwo === 'Student') {
           navigate('/stdash');
         } else {
           navigate('/');
